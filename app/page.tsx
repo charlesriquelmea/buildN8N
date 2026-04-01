@@ -7,6 +7,7 @@ import {
   CheckCircle, Star, MessageCircle, Mail, Clock, Users, ArrowRight, Loader2,
   ShieldCheck, Instagram, Linkedin, Youtube, Twitter, Globe, Phone
 } from "lucide-react"
+import { PHONE_NUMBER } from "@/lib/copy"
 
 // ─────────────────────────────────────────────────────────
 // COPY — ALL TEXT STRINGS
@@ -531,7 +532,7 @@ function useTypewriter(phrases: string[], reducedMotion: boolean) {
       } else {
         setIsDeleting(false)
         setPhraseIdx((phraseIdx + 1) % phrases.length)
-        timeout.current = setTimeout(() => {}, 400)
+        timeout.current = setTimeout(() => { }, 400)
       }
     }
     return () => { if (timeout.current) clearTimeout(timeout.current) }
@@ -613,7 +614,6 @@ export default function AutomationLanding() {
   const finalTypewritten = useTypewriter(t.finalPhrases, reducedMotion.current)
 
   // PLACEHOLDER — replace with your WhatsApp number
-  const WA_NUMBER = "12015550000"
 
   useEffect(() => {
     reducedMotion.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches
@@ -655,7 +655,7 @@ export default function AutomationLanding() {
         // Build WA message
         const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $397. ¡Gracias!`
         const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $397. Thank you!`
-        const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
+        const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
         window.open(url, "_blank")
         setFormSuccess(true)
       }
@@ -1180,7 +1180,7 @@ export default function AutomationLanding() {
               whileInView={{ scaleY: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
-              className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-violet-500 to-zinc-700 origin-top"
+              className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-linear-to-b from-violet-500 to-zinc-700 origin-top"
             />
             <div className="flex flex-col gap-6 pl-14 sm:pl-20">
               {t.modules.map((mod, i) => (
@@ -1220,7 +1220,7 @@ export default function AutomationLanding() {
       </section>
 
       {/* ── VALUE STACK ── */}
-{/*       <section id="value" className="py-24 bg-zinc-950 relative">
+      <section id="value" className="py-24 bg-zinc-950 relative">
         <div className="absolute inset-0 pointer-events-none" style={{ boxShadow: "inset 0 0 120px rgba(139,92,246,0.04)" }} />
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-8 text-center text-balance">
@@ -1267,160 +1267,8 @@ export default function AutomationLanding() {
             </button>
           </motion.div>
         </div>
-      </section> */}
+      </section>
 
-        {/* ── Value receipt ── */}
-        <div>
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUpVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="text-center mb-10"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-balance">
-              {c.valueTitle}
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUpVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="rounded-2xl border border-slate-700 overflow-hidden"
-            style={{ backgroundColor: "#1E293B" }}
-          >
-            <motion.ul
-              variants={prefersReducedMotion ? {} : containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              className="divide-y divide-slate-700/60"
-            >
-              {c.valueItems.map((item, i) => (
-                <motion.li
-                  key={i}
-                  variants={prefersReducedMotion ? {} : fadeUpVariants}
-                  className="flex items-center justify-between gap-4 px-6 py-4"
-                >
-                  <div className="flex items-center gap-3">
-                    <CheckCircle size={18} className="text-green-400 shrink-0" />
-                    <span className="text-slate-300 text-sm leading-relaxed">{item.label}</span>
-                  </div>
-                  <StrikethroughPrice price={item.price} prefersReducedMotion={prefersReducedMotion} />
-                </motion.li>
-              ))}
-            </motion.ul>
-
-            <Separator className="bg-slate-700" />
-
-            <div className="px-6 py-4 flex items-center justify-between">
-              <span className="text-slate-400 font-semibold">{c.valueTotalLabel}</span>
-              <span className="text-slate-400 line-through text-lg font-bold">{c.valueTotalPrice}</span>
-            </div>
-
-            <div
-              className="px-6 py-5 flex items-center justify-between"
-              style={{ backgroundColor: "rgba(249,115,22,0.08)" }}
-            >
-              <span className="text-white font-bold text-lg">{c.valueYourLabel}</span>
-              <motion.span
-                className="text-orange-400 font-black text-3xl"
-                initial={prefersReducedMotion ? {} : { scale: 1 }}
-                whileInView={prefersReducedMotion ? {} : { scale: [1, 1.08, 1] }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {c.valueYourPrice} 🔥
-              </motion.span>
-            </div>
-          </motion.div>
-
-          <motion.p
-            variants={prefersReducedMotion ? {} : fadeUpVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="mt-5 text-center text-sm text-slate-500 italic leading-relaxed"
-          >
-            {c.valueAnchor}
-          </motion.p>
-        </div>
-
-        {/* ── Pricing tiers ── */}
-        <div>
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUpVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="text-center mb-8"
-          >
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-balance">
-              {c.pricingTitle}
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={prefersReducedMotion ? {} : containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="flex flex-col gap-4"
-          >
-            {c.pricingTiers.map((tier, i) => (
-              <motion.div
-                key={i}
-                variants={prefersReducedMotion ? {} : fadeUpVariants}
-                className={`rounded-xl border-2 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors ${
-                  tier.highlighted
-                    ? "border-orange-500 bg-orange-500/8"
-                    : "border-slate-700 bg-slate-800/50"
-                }`}
-              >
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-bold text-white text-base">{tier.label}</span>
-                    <Badge
-                      className={`text-xs ${
-                        tier.highlighted
-                          ? "bg-orange-500/20 text-orange-300 border-orange-500/40"
-                          : "bg-slate-700 text-slate-300 border-slate-600"
-                      }`}
-                    >
-                      {tier.badge}
-                    </Badge>
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">{tier.description}</p>
-                  <p className="text-xs text-green-400 font-semibold mt-1">{tier.savings}</p>
-                </div>
-                <div className="flex flex-col items-start sm:items-end gap-2 shrink-0">
-                  <div className="flex items-baseline gap-2">
-                    <span className={`font-black text-2xl ${tier.highlighted ? "text-orange-400" : "text-white"}`}>
-                      {tier.price}
-                    </span>
-                    <span className="text-slate-500 line-through text-sm">{tier.originalPrice}</span>
-                  </div>
-                  <Button
-                    size="sm"
-                    className={`min-h-[40px] font-bold ${
-                      tier.highlighted
-                        ? "bg-orange-500 hover:bg-orange-600 text-white"
-                        : "bg-slate-700 hover:bg-slate-600 text-slate-200"
-                    }`}
-                    onClick={() => {
-                      document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })
-                      trackEvent("pricing_tier_click", { tier: tier.badge })
-                    }}
-                  >
-                    {tier.cta}
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
 
 
       {/* ── TESTIMONIALS ── */}
@@ -1685,7 +1533,7 @@ export default function AutomationLanding() {
                       onClick={() => {
                         const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $397. ¡Gracias!`
                         const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $397. Thank you!`
-                        const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
+                        const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
                         window.open(url, "_blank")
                       }}
                       className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-xl transition-colors"
@@ -1719,7 +1567,7 @@ export default function AutomationLanding() {
             <div className="flex items-center gap-2">
               {formatTime(countdown).split(":").map((seg, i) => (
                 <span key={i} className="flex items-center gap-2">
-                  <span className="bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-2 text-2xl sm:text-3xl font-black font-mono text-orange-400 min-w-[56px] text-center">{seg}</span>
+                  <span className="bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-2 text-2xl sm:text-3xl font-black font-mono text-orange-400 min-w-14 text-center">{seg}</span>
                   {i < 2 && <span className="text-zinc-500 text-2xl font-bold">:</span>}
                 </span>
               ))}
@@ -1784,7 +1632,7 @@ export default function AutomationLanding() {
             <div>
               <h4 className="font-bold text-zinc-200 mb-3">{t.footerWaQ}</h4>
               <a
-                href={`https://wa.me/${WA_NUMBER}`}
+                href={`https://wa.me/${PHONE_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-5 py-3 rounded-xl text-sm transition-colors"

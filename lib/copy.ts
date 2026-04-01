@@ -1,4 +1,6 @@
-export const PHONE_NUMBER = "12015550000" // [REEMPLAZAR: NÚMERO_WA_SIN_SIMBOLOS]
+//export const PHONE_NUMBER = "12015550000" 
+// // [REEMPLAZAR: NÚMERO_WA_SIN_SIMBOLOS] numero anterior
+export const PHONE_NUMBER = "1234567890"
 export const EVENT_DATE = "Sábado 25 de Abril, 2026" // [REEMPLAZAR: FECHA DEL EVENTO]
 export const EVENT_DATE_EN = "Saturday, April 25, 2026"
 export const SPOTS_AVAILABLE = 47 // [REEMPLAZAR: CUPOS_DISPONIBLES]
