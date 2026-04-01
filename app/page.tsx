@@ -15,7 +15,7 @@ import { PHONE_NUMBER } from "@/lib/copy"
 const copy = {
   es: {
     // Announcement bar
-    announcementBar: "⚡ FORMACIÓN EN VIVO · Sáb 19 de Abril, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $397 Early Bird →",
+    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 2 de Mayo, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $397 Early Bird →",
     // Navbar
     navLinks: ["¿Qué construirás?", "Los 3 Workflows", "Inversión", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
@@ -33,7 +33,7 @@ const copy = {
       "la habilidad que las agencias cobran $5,000 por implementar.",
     ],
     heroSub: "En este taller en vivo de 6 horas construyes — no teóricamente, en tiempo real, en tu propia cuenta — los 3 workflows de automatización que transforman cómo operas tu negocio desde el lunes siguiente.",
-    trust: ["Sáb 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
+    trust: ["Sáb 2 de Mayo - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Asegurar mi cupo ($397) →",
     heroMicro: "6 horas · 3 workflows activos · nivel principiante-intermedio · garantía total si no automatizas nada",
@@ -169,7 +169,6 @@ const copy = {
     instructorBadge: "🌎 Instructor bilingüe (Español/English) · n8n Certified",
     instructorStats: [
       { value: "10+", label: "Proyectos en tech e innovación" },
-      { value: "340+", label: "Alumnos formados" },
       { value: "13+", label: "Años de experiencia" },
     ],
     // professor
@@ -180,7 +179,6 @@ const copy = {
     professorBadge: "🚀 Full‑stack & IA · DevOps",
     professorStats: [
       { value: "30+", label: "Proyectos deployados" },
-      { value: "340+", label: "Alumnos formados" },
       { value: "7+", label: "Años de experiencia" },
     ],
 
@@ -237,15 +235,15 @@ const copy = {
     // Footer
     footerTagline: "Formación en automatización para la comunidad latina en USA.",
     footerEventTitle: "Automatización en Producción con n8n",
-    footerDate: "Sábado 19 de Abril, 2026",
+    footerDate: "Sábado 2 de Mayo, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Política de privacidad", "Términos", "Contacto"],
     footerWaQ: "¿Preguntas antes de inscribirte?",
     footerWaBtn: "Escribir por WhatsApp →",
-    footerCopyright: "© 2026 AutoFlow Latino. Formación 100% online. Eastern Time (ET). NJ / NY / USA. Hecho con ❤️ para la comunidad latina.",
+    footerCopyright: "© 2026  Build in n8n. Formación 100% online. Eastern Time (ET). NJ / NY / USA. Hecho con ❤️ para la comunidad latina.",
   },
   en: {
-    announcementBar: "⚡ LIVE TRAINING · Sat April 19, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $397 Early Bird →",
+    announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $397 Early Bird →",
     navLinks: ["What you'll build?", "The 3 Workflows", "Investment", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
     ctaNav: "Secure spot — $397",
@@ -261,7 +259,7 @@ const copy = {
       "the skill agencies charge $5,000 to implement.",
     ],
     heroSub: "In this 6-hour live workshop you build — not theoretically, in real time, on your own account — the 3 automation workflows that transform how you operate your business starting the following Monday.",
-    trust: ["Sat 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
+    trust: ["Sat May 2 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Secure my spot ($397) →",
     heroMicro: "6 hours · 3 active workflows · beginner-intermediate level · full guarantee if you don't automate anything",
@@ -331,7 +329,7 @@ const copy = {
       { time: "12:00 PM", title: "BREAK + Q&A", duration: "30 min", desc: "Break. Review of workflows so far. Live Q&A.", learn: "", get: "", badge: null, isBreak: true },
       { time: "12:30 PM", title: "Workflow 2: Automatic Email Marketing with Resend", duration: "60 min", desc: "Event trigger → segmentation → personalized email sequence.", learn: "Resend API: setup, templates, scheduled sending. Branching logic in n8n (IF/Switch nodes). Dynamic content personalization with variables.", get: "✅ Workflow 2 active — 3-email sequence that fires automatically with each new lead or event in your system.", badge: "✅ WORKFLOW 2 DEPLOYED", isBreak: false },
       { time: "1:30 PM", title: "Workflow 3: AI Agent with Claude/GPT", duration: "60 min", desc: "Webhook → context extraction → LLM → intelligent automatic response.", learn: "Claude API and GPT-4 calls from n8n. Prompt design for responses with real context. How to avoid robotic responses: the brand voice framework in AI.", get: "✅ Workflow 3 active — an agent that receives messages, processes them with AI and responds automatically in < 30 seconds.", badge: "✅ WORKFLOW 3 DEPLOYED", isBreak: false },
-      { time: "2:30 PM", title: "BONUS: Charge $1,500–$5,000 for these Workflows", duration: "30 min", desc: "How to package, present and sell these 3 workflows to clients in the USA.", learn: "The exact script to sell automation to Latino businesses. How to price: implementation + monthly maintenance. Where to find the first 3 clients this week.", get: "A portfolio of 3 workflows + ready service proposal + validated pricing strategy for the NJ/NY/USA market.", badge: null, isBreak: false },
+      /* { time: "2:30 PM", title: "BONUS: Charge $1,500–$5,000 for these Workflows", duration: "30 min", desc: "How to package, present and sell these 3 workflows to clients in the USA.", learn: "The exact script to sell automation to Latino businesses. How to price: implementation + monthly maintenance. Where to find the first 3 clients this week.", get: "A portfolio of 3 workflows + ready service proposal + validated pricing strategy for the NJ/NY/USA market.", badge: null, isBreak: false }, */
       { time: "3:00 PM", title: "Closing, community and next steps", duration: "30 min", desc: "Resource access, WhatsApp community, upcoming advanced sessions.", learn: "", get: "", badge: null, isBreak: true },
     ],
     valueTitle: "Everything you get when you enroll today:",
@@ -380,7 +378,7 @@ const copy = {
     statsBar: "⚡ 340+ students trained · 🌎 NJ · NY · FL · TX · CA · IL · and more · ⭐ 4.9/5 rating · 💼 $800 average income first month as a service",
     guaranteeTitle: "Real automation guarantee",
     guaranteeBody: "If you complete the 6-hour live workshop and at the end don't have at least 1 of the 3 workflows active and running in your account, I'll refund 100% of your investment. No questions. No forms. No 30-day waits.\n\nWe don't sell automation webinar access. We sell the certainty that when Saturday ends, your business operates differently than when you started the morning.",
-    
+
     instructorTitle: "Your instructor",
     instructorName: "Carlos Riquelme",
     instructorInitials: "CR",
@@ -388,7 +386,6 @@ const copy = {
     instructorBadge: "🌎 Bilingual instructor (Español/English) · n8n Certified",
     instructorStats: [
       { value: "10+", label: "Workflows deployed" },
-      { value: "340+", label: "Students trained" },
       { value: "13+", label: "Years of experience" },
     ],
 
@@ -398,7 +395,6 @@ const copy = {
     professorBadge: "🚀 Full‑stack & IA · DevOps",
     professorStats: [
       { value: "30+", label: "Workflows deployed" },
-      { value: "340+", label: "Students trained" },
       { value: "7+", label: "Years of experience" },
     ],
 
@@ -450,12 +446,12 @@ const copy = {
     stickyBtn: "Reserve →",
     footerTagline: "Automation training for the Latino community in the USA.",
     footerEventTitle: "Automation in Production with n8n",
-    footerDate: "Saturday April 19, 2026",
+    footerDate: "Saturday May 2, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Privacy Policy", "Terms", "Contact"],
     footerWaQ: "Questions before enrolling?",
     footerWaBtn: "Message on WhatsApp →",
-    footerCopyright: "© 2026 AutoFlow Latino. 100% online training. Eastern Time (ET). NJ / NY / USA. Made with ❤️ for the Latino community.",
+    footerCopyright: "© 2026  Build in n8n. 100% online training. Eastern Time (ET). NJ / NY / USA. Made with ❤️ for the Latino community.",
   },
 }
 
@@ -633,7 +629,11 @@ export default function AutomationLanding() {
   const reducedMotion = useRef(false)
 
   const t = copy[lang]
-  const countdown = useCountdown(72 * 3600)
+
+  const targetDate = new Date("2026-05-02T00:00:00");
+  const diffInSeconds = Math.floor((targetDate.getTime() - Date.now()) / 1000);
+  const countdown = useCountdown(diffInSeconds)
+
   const typewritten = useTypewriter(t.typewriterPhrases, reducedMotion.current)
   const finalTypewritten = useTypewriter(t.finalPhrases, reducedMotion.current)
 
@@ -789,7 +789,7 @@ export default function AutomationLanding() {
               <div className="w-6 border-t border-dashed border-violet-400" />
               <div className="w-3 h-3 rounded-full bg-cyan-400 border-2 border-cyan-300" />
             </div>
-            <span className="font-black text-lg tracking-tight text-zinc-50">AutoFlow<span className="text-violet-400">Latino</span></span>
+            <span className="font-black text-lg tracking-tight text-zinc-50"> Build in <span className="text-violet-400">n8n</span></span>
           </div>
 
           {/* Center links (desktop) */}
@@ -1198,7 +1198,7 @@ export default function AutomationLanding() {
             {t.curriculumTitle}
           </motion.h2>
           <div className="relative">
-            
+
             <motion.div
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
@@ -1296,7 +1296,7 @@ export default function AutomationLanding() {
 
 
       {/* ── TESTIMONIALS ── */}
-{/*       <section className="py-24 bg-zinc-900">
+      {/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-12 text-center text-balance">
             {t.testimonialsTitle}
@@ -1347,16 +1347,16 @@ export default function AutomationLanding() {
       </section>
 
       {/* ── INSTRUCTOR ── */}
-      <section className="py-24 bg-zinc-900">
+{/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
-            {/* Avatar */}
+            
             <div className="shrink-0">
               <div className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black text-white" style={{ background: "linear-gradient(135deg, #8B5CF6, #06B6D4)" }}>
                 {t.instructorInitials}
               </div>
             </div>
-            {/* Bio */}
+            
             <div>
               <p className="text-xs text-zinc-400 mb-1 font-semibold uppercase tracking-widest">{t.instructorTitle}</p>
               <h3 className="text-2xl font-bold text-zinc-50 mb-3">{t.instructorName}</h3>
@@ -1373,19 +1373,19 @@ export default function AutomationLanding() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── PROFFESSOR ── */}
-      <section className="py-24 bg-zinc-900">
+{/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
-            {/* Avatar */}
+
             <div className="shrink-0">
               <div className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black text-white" style={{ background: "linear-gradient(135deg, #8B5CF6, #06B6D4)" }}>
                 {t.professorInitials}
               </div>
             </div>
-            {/* Bio */}
+
             <div>
               <p className="text-xs text-zinc-400 mb-1 font-semibold uppercase tracking-widest">{t.professorTitle}</p>
               <h3 className="text-2xl font-bold text-zinc-50 mb-3">{t.professorName}</h3>
@@ -1401,6 +1401,82 @@ export default function AutomationLanding() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section> */}
+
+      {/* ── INSTRUCTORS ── */}
+      <section className="py-24 bg-zinc-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          {/* Header */}
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-center mb-12">
+            <p className="text-xs text-zinc-400 mb-2 font-semibold uppercase tracking-widest">{t.instructorTitle}</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-zinc-50">
+              {lang === "es" ? "Los fundadores" : "The founders"}
+            </h2>
+          </motion.div>
+
+          {/* Two-column cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                initials: t.instructorInitials,
+                name: t.instructorName,
+                badge: t.instructorBadge,
+                bio: t.instructorBio,
+                stats: t.instructorStats,
+                gradient: "linear-gradient(135deg, #8B5CF6, #06B6D4)",
+                delay: 0,
+              },
+              {
+                initials: t.professorInitials,
+                name: t.professorName,
+                badge: t.professorBadge,
+                bio: t.professorBio,
+                stats: t.professorStats,
+                gradient: "linear-gradient(135deg, #3B82F6, #1D4ED8)",
+                delay: 0.15,
+              },
+            ].map((person, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ delay: person.delay }}
+                className="flex flex-col items-center gap-6 bg-zinc-800 border border-zinc-700 rounded-2xl p-8"
+              >
+                {/* Avatar + badge */}
+                <div className="flex flex-col items-center gap-3">
+                  <div
+                    className="w-24 h-24 rounded-full flex items-center justify-center text-2xl font-black text-white"
+                    style={{ background: person.gradient }}
+                  >
+                    {person.initials}
+                  </div>
+                  <span className="text-xs text-violet-300 bg-violet-500/10 border border-violet-500/20 px-3 py-1 rounded-full text-center">
+                    {person.badge}
+                  </span>
+                </div>
+
+                {/* Bio */}
+                <div className="flex flex-col items-center text-center gap-3 w-full">
+                  <h3 className="text-xl font-bold text-zinc-50">{person.name}</h3>
+                  <p className="text-zinc-400 leading-relaxed text-sm">{person.bio}</p>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-2 gap-3 w-full mt-2">
+                    {person.stats.map((stat, j) => (
+                      <div key={j} className="flex flex-col items-center bg-zinc-900 border border-zinc-700 rounded-xl p-3">
+                        <span className="text-xl font-black text-violet-400">{stat.value}</span>
+                        <span className="text-xs text-zinc-500 mt-1 leading-tight text-center">{stat.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -1655,7 +1731,7 @@ export default function AutomationLanding() {
                   <div className="w-6 border-t border-dashed border-violet-400" />
                   <div className="w-3 h-3 rounded-full bg-cyan-400" />
                 </div>
-                <span className="font-black text-zinc-50">AutoFlow<span className="text-violet-400">Latino</span></span>
+                <span className="font-black text-zinc-50">Build in <span className="text-violet-400">n8n</span></span>
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed mb-4">{t.footerTagline}</p>
               <div className="flex gap-3">

@@ -49,7 +49,7 @@ export function Navbar({ lang, onLangChange, onCtaClick, countdown }: Props) {
             <div className="w-3 h-3 rounded-full bg-cyan-400 ring-2 ring-cyan-400/30" />
           </div>
           <span className="font-black text-lg tracking-tight text-zinc-50 ml-1">
-            AutoFlow
+            Build in n8n
           </span>
         </div>
 

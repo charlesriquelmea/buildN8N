@@ -2,7 +2,7 @@
 // // [REEMPLAZAR: NÚMERO_WA_SIN_SIMBOLOS] numero anterior
 export const PHONE_NUMBER = "15513349406"
 export const EVENT_DATE = "Sábado 25 de Abril, 2026" // [REEMPLAZAR: FECHA DEL EVENTO]
-export const EVENT_DATE_EN = "Saturday, April 25, 2026"
+export const EVENT_DATE_EN = "Saturday, May 2, 2026"
 export const SPOTS_AVAILABLE = 47 // [REEMPLAZAR: CUPOS_DISPONIBLES]
 export const INSTRUCTOR_NAME = "Carlos Rivera" // [REEMPLAZAR: NOMBRE_INSTRUCTOR]
 export const INSTRUCTOR_INITIALS = "CR" // [REEMPLAZAR: INICIALES_INSTRUCTOR]
