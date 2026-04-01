@@ -1734,13 +1734,6 @@ export default function AutomationLanding() {
                 <span className="font-black text-zinc-50">Build in <span className="text-violet-400">n8n</span></span>
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed mb-4">{t.footerTagline}</p>
-              <div className="flex gap-3">
-                {[Instagram, Linkedin, Youtube, Twitter].map((Icon, i) => (
-                  <a key={i} href="#" className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-zinc-50 hover:border-zinc-500 transition-colors" aria-label="Social">
-                    <Icon className="w-4 h-4" />
-                  </a>
-                ))}
-              </div>
             </div>
 
             {/* Col 2: Event */}
