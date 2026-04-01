@@ -163,15 +163,27 @@ const copy = {
     guaranteeBody: "Si completas el taller en vivo de 6 horas y al terminar no tienes al menos 1 de los 3 workflows activo y corriendo en tu cuenta, te devuelvo el 100% de tu inversión. Sin preguntas. Sin formularios. Sin esperas de 30 días.\n\nNo vendemos acceso a un webinar de automatización. Vendemos la certeza de que al terminar el sábado, tu negocio opera diferente que cuando empezaste la mañana.",
     // Instructor
     instructorTitle: "Tu instructor",
-    instructorName: "[REEMPLAZAR: NOMBRE_INSTRUCTOR]",
-    instructorInitials: "NI",
-    instructorBio: "Especialista en automatización con n8n con 5+ años implementando workflows para negocios latinos en USA. 200+ workflows deployados en producción. 340+ alumnos formados. Consultor de automatización para agencias y SaaS en NJ/NY.",
+    instructorName: "Carlos Riquelme",
+    instructorInitials: "CR",
+    instructorBio: "Arquitecto de ecosistemas con 12 años innovando en tech. 10 productos construidos. 9 incubaciones impulsadas en Latam. Especializado en el mercado latino: emprendedores, equipos y builders que quieren construir negocios reales con herramientas de frontera.",
     instructorBadge: "🌎 Instructor bilingüe (Español/English) · n8n Certified",
     instructorStats: [
-      { value: "200+", label: "Workflows deployados" },
+      { value: "10+", label: "Proyectos en tech e innovación" },
       { value: "340+", label: "Alumnos formados" },
-      { value: "5+", label: "Años de experiencia" },
+      { value: "13+", label: "Años de experiencia" },
     ],
+    // professor
+    professorTitle: "Tu instructor",
+    professorName: "Daniel Castiblanco",
+    professorInitials: "DC",
+    professorBio: "Ingeniero de software con 7+ años construyendo productos full‑stack a escala. Especialista en arquitectura TypeScript/Angular, DevOps con Docker y productos basados en IA. Creador de Sendell, plataforma de agentes IA en producción con clientes activos.",
+    professorBadge: "🚀 Full‑stack & IA · DevOps",
+    professorStats: [
+      { value: "30+", label: "Proyectos deployados" },
+      { value: "340+", label: "Alumnos formados" },
+      { value: "7+", label: "Años de experiencia" },
+    ],
+
     // FAQ
     faqTitle: "Preguntas frecuentes",
     faqs: [
@@ -368,16 +380,28 @@ const copy = {
     statsBar: "⚡ 340+ students trained · 🌎 NJ · NY · FL · TX · CA · IL · and more · ⭐ 4.9/5 rating · 💼 $800 average income first month as a service",
     guaranteeTitle: "Real automation guarantee",
     guaranteeBody: "If you complete the 6-hour live workshop and at the end don't have at least 1 of the 3 workflows active and running in your account, I'll refund 100% of your investment. No questions. No forms. No 30-day waits.\n\nWe don't sell automation webinar access. We sell the certainty that when Saturday ends, your business operates differently than when you started the morning.",
+    
     instructorTitle: "Your instructor",
-    instructorName: "[REPLACE: INSTRUCTOR_NAME]",
-    instructorInitials: "NI",
-    instructorBio: "Automation specialist with n8n with 5+ years implementing workflows for Latino businesses in USA. 200+ workflows deployed in production. 340+ students trained. Automation consultant for agencies and SaaS in NJ/NY.",
+    instructorName: "Carlos Riquelme",
+    instructorInitials: "CR",
+    instructorBio: "Ecosystem architect with 12 years of experience in tech innovation. 10 products built. 9 incubations launched in Latin America. Specialized in the Latin American market: entrepreneurs, teams, and builders who want to build real businesses with cutting-edge tools.",
     instructorBadge: "🌎 Bilingual instructor (Español/English) · n8n Certified",
     instructorStats: [
-      { value: "200+", label: "Workflows deployed" },
+      { value: "10+", label: "Workflows deployed" },
       { value: "340+", label: "Students trained" },
-      { value: "5+", label: "Years of experience" },
+      { value: "13+", label: "Years of experience" },
     ],
+
+    professorName: "Daniel Castiblanco",
+    professorInitials: "DC",
+    professorBio: "Software engineer with 7+ years of experience building full-stack products at scale. Specialist in TypeScript/Angular architecture, DevOps with Docker, and AI-based products. Creator of Sendell, a production AI agent platform with active clients.",
+    professorBadge: "🚀 Full‑stack & IA · DevOps",
+    professorStats: [
+      { value: "30+", label: "Workflows deployed" },
+      { value: "340+", label: "Students trained" },
+      { value: "7+", label: "Years of experience" },
+    ],
+
     faqTitle: "Frequently asked questions",
     faqs: [
       { q: "Do I need to know how to code to attend?", a: "No. n8n is a visual platform — most workflows are built by connecting nodes with clicks. In Workflow 3 (AI agent) we use basic JavaScript in one node, which the instructor explains line by line. If you can use Excel, you can learn n8n in this workshop." },
@@ -1340,6 +1364,35 @@ export default function AutomationLanding() {
               <span className="text-xs text-violet-300 bg-violet-500/10 border border-violet-500/20 px-3 py-1 rounded-full">{t.instructorBadge}</span>
               <div className="flex flex-wrap gap-6 mt-6">
                 {t.instructorStats.map((stat, i) => (
+                  <div key={i}>
+                    <div className="text-2xl font-black text-violet-400">{stat.value}</div>
+                    <div className="text-xs text-zinc-400">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── PROFFESSOR ── */}
+      <section className="py-24 bg-zinc-900">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+            {/* Avatar */}
+            <div className="shrink-0">
+              <div className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black text-white" style={{ background: "linear-gradient(135deg, #8B5CF6, #06B6D4)" }}>
+                {t.professorInitials}
+              </div>
+            </div>
+            {/* Bio */}
+            <div>
+              <p className="text-xs text-zinc-400 mb-1 font-semibold uppercase tracking-widest">{t.professorTitle}</p>
+              <h3 className="text-2xl font-bold text-zinc-50 mb-3">{t.professorName}</h3>
+              <p className="text-zinc-400 leading-relaxed mb-3">{t.professorBio}</p>
+              <span className="text-xs text-violet-300 bg-violet-500/10 border border-violet-500/20 px-3 py-1 rounded-full">{t.professorBadge}</span>
+              <div className="flex flex-wrap gap-6 mt-6">
+                {t.professorStats.map((stat, i) => (
                   <div key={i}>
                     <div className="text-2xl font-black text-violet-400">{stat.value}</div>
                     <div className="text-xs text-zinc-400">{stat.label}</div>
