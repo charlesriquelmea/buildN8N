@@ -109,7 +109,7 @@ const copy = {
       { time: "12:00 PM", title: "BREAK + Q&A", duration: "30 min", desc: "Pausa. Revisión de los workflows hasta el momento. Preguntas en vivo.", learn: "", get: "", badge: null, isBreak: true },
       { time: "12:30 PM", title: "Workflow 2: Email Marketing Automático con Resend", duration: "60 min", desc: "Trigger por evento → segmentación → secuencia de emails personalizados.", learn: "Resend API: configuración, templates, envío programado. Lógica de ramificación en n8n (IF/Switch nodes). Personalización dinámica de contenido con variables.", get: "✅ Workflow 2 activo — secuencia de 3 emails que se dispara automáticamente con cada nuevo lead o evento en tu sistema.", badge: "✅ WORKFLOW 2 DEPLOYADO", isBreak: false },
       { time: "1:30 PM", title: "Workflow 3: Agente de IA con Claude/GPT", duration: "60 min", desc: "Webhook → extracción de contexto → LLM → respuesta automática inteligente.", learn: "Llamadas a Claude API y GPT-4 desde n8n. Diseño de prompts para respuestas con contexto real. Cómo evitar respuestas robóticas: el framework de voz de marca en IA.", get: "✅ Workflow 3 activo — un agente que recibe mensajes, los procesa con IA y responde automáticamente en < 30 segundos.", badge: "✅ WORKFLOW 3 DEPLOYADO", isBreak: false },
-      { time: "2:30 PM", title: "BONUS: Cobra $1,500–$5,000 por estos Workflows", duration: "30 min", desc: "Cómo empaquetar, presentar y vender estos 3 workflows a clientes en USA.", learn: "El script exacto para vender automatización a negocios latinos. Cómo fijar precios: implementación + mantenimiento mensual. Dónde encontrar los primeros 3 clientes esta semana.", get: "Un portafolio de 3 workflows + propuesta de servicio lista + estrategia de pricing validada para el mercado NJ/NY/USA.", badge: null, isBreak: false },
+      /* { time: "2:30 PM", title: "BONUS: Cobra $1,500–$5,000 por estos Workflows", duration: "30 min", desc: "Cómo empaquetar, presentar y vender estos 3 workflows a clientes en USA.", learn: "El script exacto para vender automatización a negocios latinos. Cómo fijar precios: implementación + mantenimiento mensual. Dónde encontrar los primeros 3 clientes esta semana.", get: "Un portafolio de 3 workflows + propuesta de servicio lista + estrategia de pricing validada para el mercado NJ/NY/USA.", badge: null, isBreak: false }, */
       { time: "3:00 PM", title: "Cierre, comunidad y próximos pasos", duration: "30 min", desc: "Acceso a recursos, comunidad WhatsApp, próximas sesiones avanzadas.", learn: "", get: "", badge: null, isBreak: true },
     ],
     // Value Stack
@@ -1198,7 +1198,7 @@ export default function AutomationLanding() {
             {t.curriculumTitle}
           </motion.h2>
           <div className="relative">
-            {/* Vertical line */}
+            
             <motion.div
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
@@ -1213,7 +1213,7 @@ export default function AutomationLanding() {
                   variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-40px" }}
                   className={`relative ${mod.isBreak ? "opacity-70" : ""}`}
                 >
-                  {/* Dot */}
+
                   <div className={`absolute -left-14 sm:-left-20 w-4 h-4 rounded-full border-2 top-1 ${mod.isBreak ? "border-zinc-500 bg-zinc-700" : "border-violet-500 bg-violet-500/20"}`} />
                   <div className={`rounded-xl p-5 border ${mod.isBreak ? "bg-zinc-900/50 border-zinc-800 italic" : "bg-zinc-900 border-zinc-700"}`}>
                     <div className="flex flex-wrap items-center gap-2 mb-2">
@@ -1296,7 +1296,7 @@ export default function AutomationLanding() {
 
 
       {/* ── TESTIMONIALS ── */}
-      <section className="py-24 bg-zinc-900">
+{/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-12 text-center text-balance">
             {t.testimonialsTitle}
@@ -1327,7 +1327,7 @@ export default function AutomationLanding() {
             <p className="text-zinc-300 text-sm">{t.statsBar}</p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── GUARANTEE ── */}
       <section className="py-24 bg-zinc-950">
