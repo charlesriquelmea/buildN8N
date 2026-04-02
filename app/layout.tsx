@@ -6,14 +6,14 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Formación n8n en Español | Automatización con WhatsApp API e IA en 6 Horas | $397 | NJ · NY',
+  title: 'Formación n8n en Español | Automatización con WhatsApp API e IA en 6 Horas | $497 | NJ · NY',
   description:
-    'Taller intensivo en vivo para latinos en USA. Construye 3 workflows activos con n8n, WhatsApp API, Resend y Claude/GPT en 6 horas. Lead capture → CRM, email marketing automático, agente de IA. Nivel principiante-intermedio. Solo 50 estudiantes. $397 Early Bird.',
+    'Taller intensivo en vivo para latinos en USA. Construye 3 workflows activos con n8n, WhatsApp API, Resend y Claude/GPT en 6 horas. Lead capture → CRM, email marketing automático, agente de IA. Nivel principiante-intermedio. Solo 50 estudiantes. $497 Early Bird.',
   generator: 'v0.app',
   keywords: ['n8n', 'automatización', 'workflow', 'WhatsApp API', 'IA', 'latinos USA', 'automatización en español'],
   openGraph: {
     title: 'Automatización en Producción: 3 Workflows Activos en 6 Horas con n8n',
-    description: 'Taller en vivo · 6 horas · 3 workflows activos · Solo 50 estudiantes · $397 Early Bird',
+    description: 'Taller en vivo · 6 horas · 3 workflows activos · Solo 50 estudiantes · $497 Early Bird',
     locale: 'es_US',
     type: 'website',
   },

@@ -19,11 +19,11 @@ import { Card, CardContent } from "@/components/ui/card"
 const copy = {
   es: {
     // Announcement bar
-    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 2 de Mayo, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $397 Early Bird →",
+    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 2 de Mayo, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $497 Early Bird →",
     // Navbar
     navLinks: ["¿Qué construirás?", "Los 3 Workflows", "Inversión", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
-    ctaNav: "Asegurar cupo — $397",
+    ctaNav: "Asegurar cupo — $497",
     ebLabel: "EB:",
     // Hero
     eyebrow: "⚡ Formación Intensiva · 6 horas · Solo 50 cupos · NJ · NY · USA · Nivel Principiante–Intermedio",
@@ -61,7 +61,7 @@ const copy = {
     heroSub: "En este taller en vivo de 6 horas construyes — no teóricamente, en tiempo real, en tu propia cuenta — los 3 workflows de automatización que transforman cómo operas tu negocio desde el lunes siguiente.",
     trust: ["Sáb 2 de Mayo - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
-    heroCta: "Asegurar mi cupo ($397) →",
+    heroCta: "Asegurar mi cupo ($497) →",
     heroMicro: "6 horas · 3 workflows activos · nivel principiante-intermedio · garantía total si no automatizas nada",
     heroSecondary: "Ver los 3 workflows que construirás ↓",
     // Ticker
@@ -80,9 +80,9 @@ const copy = {
     // Value stack
     valueTitle: "Todo lo que construyes y recibes al inscribirte hoy:",
     valueItems: [
-      { label: "Acceso al taller en vivo (2 horas) — Landing Page con IA", price: "$397" },
-      { label: "Tu landing page deployada con dominio propio", price: "$297" },
-      { label: "Formulario conectado a WhatsApp Business", price: "$197" },
+      { label: "Acceso al taller en vivo (2 horas) — Landing Page con IA", price: "$497" },
+      { label: "Tu landing page deployada con dominio propio", price: "$397" },
+      { label: "Formulario conectado a WhatsApp Business", price: "$297" },
       { label: "Email automático de bienvenida (Resend)", price: "$97" },
       { label: "Animaciones profesionales (Motion)", price: "$97" },
       { label: "Grabación privada 7 días", price: "$97" },
@@ -92,8 +92,8 @@ const copy = {
     valueTotalLabel: "Valor total de la formación:",
     valueTotalPrice: "$1,336",
     valueYourLabel: "Tu inversión hoy:",
-    valueYourPrice: "$297",
-    valueAnchor: "Un dev en NJ cobra $150/hr. 2 horas de consultoría = $300. Tú pagas $297 y aprendes a construirlo tú — para siempre.",
+    valueYourPrice: "$397",
+    valueAnchor: "Un dev en NJ cobra $150/hr. 2 horas de consultoría = $300. Tú pagas $397 y aprendes a construirlo tú — para siempre.",
 
     // Pricing tiers
     pricingTitle: "Elige tu acceso — cupos limitados:",
@@ -101,8 +101,8 @@ const copy = {
       {
         label: "Chamber of Commerce Latino NJ",
         badge: "Miembros",
-        price: "$197",
-        originalPrice: "$297",
+        price: "$297",
+        originalPrice: "$397",
         savings: "Ahorras $100",
         description: "Exclusivo para miembros activos de la Chamber of Commerce Latino New Jersey.",
         cta: "Quiero este precio →",
@@ -110,8 +110,8 @@ const copy = {
       {
         label: "Aliados del ecosistema",
         badge: "Aliados",
-        price: "$247",
-        originalPrice: "$297",
+        price: "$347",
+        originalPrice: "$397",
         savings: "Ahorras $50",
         description: "Para asesores de negocios, contadores, coaches y consultores que refieren clientes.",
         cta: "Quiero este precio →",
@@ -119,9 +119,9 @@ const copy = {
       {
         label: "Público general",
         badge: "Early Bird",
-        price: "$297",
-        originalPrice: "$397",
-        savings: "Precio sube a $397 pronto",
+        price: "$397",
+        originalPrice: "$497",
+        savings: "Precio sube a $497 pronto",
         description: "Acceso completo al taller. Precio early bird activo mientras haya cupos disponibles.",
         cta: "Asegurar mi cupo →",
         highlighted: true,
@@ -130,14 +130,14 @@ const copy = {
 
     // Growth hack
     growthTitle: "Trae un amigo y los dos pagan menos:",
-    growthBody: "Refiere a un familiar, amigo o colega — cuando ambos se inscriban, cada uno paga solo $197 en lugar de $297. Comparte tu link personalizado y el descuento se aplica automático. Solo disponible para los próximos 10 cupos referidos.",
+    growthBody: "Refiere a un familiar, amigo o colega — cuando ambos se inscriban, cada uno paga solo $297 en lugar de $397. Comparte tu link personalizado y el descuento se aplica automático. Solo disponible para los próximos 10 cupos referidos.",
     growthBadge: "Solo 10 cupos con este precio",
     growthCta: "Obtener mi link de referido →",
 
     // Payment options
     paymentTitle: "Opciones de pago flexibles:",
     paymentOptions: [
-      { label: "Pago completo", detail: "$297 hoy", highlight: false },
+      { label: "Pago completo", detail: "$397 hoy", highlight: false },
       { label: "3 cuotas", detail: "~$99–$107 / mes", highlight: false },
       { label: "Reserva anticipada", detail: "$150 hoy → resto en 2 cuotas hasta el workshop", highlight: true },
     ],
@@ -153,7 +153,7 @@ const copy = {
     wf3What: "Un mensaje llega (por WhatsApp, email, formulario). n8n extrae el contexto, lo envía a Claude o GPT con tu prompt personalizado, recibe la respuesta inteligente y la entrega automáticamente. Sin sonar a robot. Con el tono de tu marca.",
     wf3Impact: ["⚡ Respuesta: < 30 segundos", "💰 Valor: $2,000–$5,000 como servicio", "🤖 IA con contexto"],
     wf3Stack: ["n8n", "Claude API", "GPT-4", "Webhooks", "WhatsApp API"],
-    workflowsSummary: 'Valor de mercado de estos 3 workflows implementados por una agencia: $4,500–$12,000. Tu inversión para aprender a construirlos tú: $397. Una sola vez.',
+    workflowsSummary: 'Valor de mercado de estos 3 workflows implementados por una agencia: $4,500–$12,000. Tu inversión para aprender a construirlos tú: $497. Una sola vez.',
     // N8n Advantage
     n8nTitle: "¿Por qué n8n y no Zapier, Make o cualquier otro?",
     n8nIntro: "n8n no es solo otra herramienta de automatización. Es la plataforma open-source que usan equipos de ingeniería en startups Serie B, agencias enterprise y freelancers que quieren control total sin pagar por ejecución. Hay razones técnicas y económicas por las que aprenderás n8n específicamente.",
@@ -207,22 +207,22 @@ const copy = {
     valueTitle2: "Todo lo que recibes al inscribirte hoy:",
     valueItems2: [
       { label: "Acceso al taller en vivo (6 horas)", price: "$597" },
-      { label: "Grabación privada 7 días", price: "$197" },
-      { label: "Los 3 workflows en código — tuyos para siempre (licencia comercial)", price: "$297" },
+      { label: "Grabación privada 7 días", price: "$297" },
+      { label: "Los 3 workflows en código — tuyos para siempre (licencia comercial)", price: "$397" },
       { label: "Guía 'Cobra $1,500–$5,000 vendiendo automatizaciones en USA'", price: "$147" },
       { label: "Comunidad privada de WhatsApp (30 días de soporte)", price: "$97" },
       { label: "Script de ventas bilingüe para cerrar clientes de automatización", price: "$97" },
       { label: "Plantilla de propuesta de servicio de automatización", price: "$67" },
-      { label: "Q&A en vivo + soporte técnico durante el taller", price: "$197" },
+      { label: "Q&A en vivo + soporte técnico durante el taller", price: "$297" },
       { label: "Checklist de deploy y seguridad para n8n en producción", price: "$47" },
     ],
     valueTotalLabel2: "Valor total de la formación:",
     valueTotalPrice2: "$1,743",
     valueInvestLabel: "Tu inversión hoy:",
-    valueInvestPrice: "$397",
+    valueInvestPrice: "$497",
     valueEbSub: "(Regular después del Early Bird: $497)",
-    valueAnchor2: "Una agencia cobra $2,500 solo por implementar el Workflow 1. Tú pagas $397 y aprendes a construir los 3. Una sola vez. Para siempre.",
-    valueCta: "Asegurar mi cupo por $397 →",
+    valueAnchor2: "Una agencia cobra $2,500 solo por implementar el Workflow 1. Tú pagas $497 y aprendes a construir los 3. Una sola vez. Para siempre.",
+    valueCta: "Asegurar mi cupo por $497 →",
     // Testimonials
     testimonialsTitle: "Lo que dicen quienes ya tienen sus workflows activos:",
     testimonials: [
@@ -290,7 +290,7 @@ const copy = {
     formSectionSpots: "22 lugares",
     formSectionSub: "2 minutos · Registro por WhatsApp · Sin tarjeta de crédito aún",
     step0Title: "¡Reserva tu lugar en 2 minutos!",
-    step0Body: "Solo 50 cupos · 3 workflows activos · $397 Early Bird",
+    step0Body: "Solo 50 cupos · 3 workflows activos · $497 Early Bird",
     step0Btn: "Empezar →",
     step1Label: "¿Cuál es tu nombre? 👋",
     step1Hint: "Presiona Enter ↵",
@@ -316,12 +316,12 @@ const copy = {
     // Final CTA
     finalTitle: "3 workflows activos. Este sábado. Desde tu casa.",
     finalPhrases: ["6 horas. 3 workflows. Infraestructura real.", "Tu negocio automatizado desde el lunes.", "50 cupos. Sábado 10 AM ET. ¿Entras?"],
-    finalCountdownLabel: "Early Bird $397 termina en:",
-    finalCta: "SÍ, QUIERO MIS 3 WORKFLOWS POR $397 →",
+    finalCountdownLabel: "Early Bird $497 termina en:",
+    finalCta: "SÍ, QUIERO MIS 3 WORKFLOWS POR $497 →",
     finalMicro: "→ Registro por WhatsApp · 3 cuotas de $165 · Garantía total · Nivel principiante-intermedio",
     finalSocial: "🔥 87 profesionales ya reservaron su cupo esta semana",
     // Sticky bar
-    stickyText: "⚡ 22 cupos · Early Bird $397 (sube a $497) · n8n · WhatsApp API · IA ·",
+    stickyText: "⚡ 22 cupos · Early Bird $497 (sube a $497) · n8n · WhatsApp API · IA ·",
     stickyBtn: "Reservar →",
     // Footer
     footerTagline: "Formación en automatización para la comunidad latina en USA.",
@@ -335,10 +335,10 @@ const copy = {
   },
 
   en: {
-    announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $397 Early Bird →",
+    announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $497 Early Bird →",
     navLinks: ["What you'll build?", "The 3 Workflows", "Investment", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
-    ctaNav: "Secure spot — $397",
+    ctaNav: "Secure spot — $497",
     ebLabel: "EB:",
     eyebrow: "⚡ Intensive Training · 6 hours · Only 50 spots · NJ · NY · USA · Beginner–Intermediate",
     heroH1: "Automate your business. Build 3 active workflows in one Saturday.",
@@ -353,7 +353,7 @@ const copy = {
     heroSub: "In this 6-hour live workshop you build — not theoretically, in real time, on your own account — the 3 automation workflows that transform how you operate your business starting the following Monday.",
     trust: ["Sat May 2 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
-    heroCta: "Secure my spot ($397) →",
+    heroCta: "Secure my spot ($497) →",
     heroMicro: "6 hours · 3 active workflows · beginner-intermediate level · full guarantee if you don't automate anything",
     heroSecondary: "See the 3 workflows you'll build ↓",
     tickerPrefix: "You'll build with →",
@@ -378,7 +378,7 @@ const copy = {
     wf3What: "A message arrives (via WhatsApp, email, form). n8n extracts the context, sends it to Claude or GPT with your custom prompt, receives the intelligent response and delivers it automatically. Without sounding robotic. In your brand's voice.",
     wf3Impact: ["⚡ Response: < 30 seconds", "💰 Value: $2,000–$5,000 as a service", "🤖 AI with context"],
     wf3Stack: ["n8n", "Claude API", "GPT-4", "Webhooks", "WhatsApp API"],
-    workflowsSummary: 'Market value of these 3 workflows implemented by an agency: $4,500–$12,000. Your investment to learn to build them yourself: $397. One time.',
+    workflowsSummary: 'Market value of these 3 workflows implemented by an agency: $4,500–$12,000. Your investment to learn to build them yourself: $497. One time.',
     n8nTitle: "Why n8n and not Zapier, Make, or anything else?",
     n8nIntro: "n8n isn't just another automation tool. It's the open-source platform used by engineering teams at Series B startups, enterprise agencies, and freelancers who want total control without paying per execution. There are technical and economic reasons you'll learn n8n specifically.",
     n8nCards: [
@@ -449,22 +449,22 @@ const copy = {
     valueTitle: "Everything you get when you enroll today:",
     valueItems: [
       { label: "Live workshop access (6 hours)", price: "$597" },
-      { label: "Private 7-day recording", price: "$197" },
-      { label: "All 3 workflows in code — yours forever (commercial license)", price: "$297" },
+      { label: "Private 7-day recording", price: "$297" },
+      { label: "All 3 workflows in code — yours forever (commercial license)", price: "$397" },
       { label: "Guide 'Charge $1,500–$5,000 selling automations in the USA'", price: "$147" },
       { label: "Private WhatsApp community (30 days of support)", price: "$97" },
       { label: "Bilingual sales script to close automation clients", price: "$97" },
       { label: "Automation service proposal template", price: "$67" },
-      { label: "Live Q&A + technical support during the workshop", price: "$197" },
+      { label: "Live Q&A + technical support during the workshop", price: "$297" },
       { label: "Deploy and security checklist for n8n in production", price: "$47" },
     ],
     valueTotalLabel: "Total training value:",
     valueTotalPrice: "$1,743",
     valueInvestLabel: "Your investment today:",
-    valueInvestPrice: "$397",
+    valueInvestPrice: "$497",
     valueEbSub: "(Regular after Early Bird: $497)",
-    valueAnchor: "An agency charges $2,500 just to implement Workflow 1. You pay $397 and learn to build all 3. One time. Forever.",
-    valueCta: "Secure my spot for $397 →",
+    valueAnchor: "An agency charges $2,500 just to implement Workflow 1. You pay $497 and learn to build all 3. One time. Forever.",
+    valueCta: "Secure my spot for $497 →",
     testimonialsTitle: "What those who already have their workflows active say:",
     testimonials: [
       {
@@ -527,7 +527,7 @@ const copy = {
     formSectionSpots: "22 spots left",
     formSectionSub: "2 minutes · WhatsApp registration · No credit card yet",
     step0Title: "Reserve your spot in 2 minutes!",
-    step0Body: "Only 50 spots · 3 active workflows · $397 Early Bird",
+    step0Body: "Only 50 spots · 3 active workflows · $497 Early Bird",
     step0Btn: "Start →",
     step1Label: "What's your name? 👋",
     step1Hint: "Press Enter ↵",
@@ -536,9 +536,9 @@ const copy = {
     step3Label: "How do you describe your business right now? 🏢",
     valueTitle2: "Everything you build and receive when you enroll today:",
     valueItems2: [
-      { label: "Live workshop access (2 hours) — Landing Page with AI", price: "$397" },
-      { label: "Your landing page deployed with custom domain", price: "$297" },
-      { label: "Form connected to WhatsApp Business", price: "$197" },
+      { label: "Live workshop access (2 hours) — Landing Page with AI", price: "$497" },
+      { label: "Your landing page deployed with custom domain", price: "$397" },
+      { label: "Form connected to WhatsApp Business", price: "$297" },
       { label: "Automatic welcome email (Resend)", price: "$97" },
       { label: "Professional animations (Motion)", price: "$97" },
       { label: "Private recording 7 days", price: "$97" },
@@ -548,8 +548,8 @@ const copy = {
     valueTotalLabel2: "Total training value:",
     valueTotalPrice2: "$1,336",
     valueYourLabel: "Your investment today:",
-    valueYourPrice: "$297",
-    valueAnchor2: "A dev in NJ charges $150/hr. 2 hours of consulting = $300. You pay $297 and learn to build it yourself — forever.",
+    valueYourPrice: "$397",
+    valueAnchor2: "A dev in NJ charges $150/hr. 2 hours of consulting = $300. You pay $397 and learn to build it yourself — forever.",
 
     // Pricing tiers
     pricingTitle: "Choose your access — limited spots:",
@@ -557,8 +557,8 @@ const copy = {
       {
         label: "Chamber of Commerce Latino NJ",
         badge: "Members",
-        price: "$197",
-        originalPrice: "$297",
+        price: "$297",
+        originalPrice: "$397",
         savings: "You save $100",
         description: "Exclusive for active members of the Chamber of Commerce Latino New Jersey.",
         cta: "Get this price →",
@@ -566,8 +566,8 @@ const copy = {
       {
         label: "Ecosystem allies",
         badge: "Allies",
-        price: "$247",
-        originalPrice: "$297",
+        price: "$347",
+        originalPrice: "$397",
         savings: "You save $50",
         description: "For business advisors, accountants, coaches, and consultants who refer clients.",
         cta: "Get this price →",
@@ -575,9 +575,9 @@ const copy = {
       {
         label: "General public",
         badge: "Early Bird",
-        price: "$297",
-        originalPrice: "$397",
-        savings: "Price increases to $397 soon",
+        price: "$397",
+        originalPrice: "$497",
+        savings: "Price increases to $497 soon",
         description: "Full workshop access. Early bird price active while spots are available.",
         cta: "Secure my spot →",
         highlighted: true,
@@ -586,14 +586,14 @@ const copy = {
 
     // Growth hack
     growthTitle: "Bring a friend and both pay less:",
-    growthBody: "Refer a family member, friend, or colleague — when both of you enroll, each pays only $197 instead of $297. Share your personalized link and the discount applies automatically. Only available for the next 10 referred spots.",
+    growthBody: "Refer a family member, friend, or colleague — when both of you enroll, each pays only $297 instead of $397. Share your personalized link and the discount applies automatically. Only available for the next 10 referred spots.",
     growthBadge: "Only 10 spots at this price",
     growthCta: "Get my referral link →",
 
     // Payment options
     paymentTitle: "Flexible payment options:",
     paymentOptions: [
-      { label: "Full payment", detail: "$297 today", highlight: false },
+      { label: "Full payment", detail: "$397 today", highlight: false },
       { label: "3 installments", detail: "~$99–$107 / month", highlight: false },
       { label: "Early reserve", detail: "$150 today → rest in 2 installments before the workshop", highlight: true },
     ],
@@ -616,11 +616,11 @@ const copy = {
     successBtn: "Open WhatsApp again →",
     finalTitle: "3 active workflows. This Saturday. From your home.",
     finalPhrases: ["6 hours. 3 workflows. Real infrastructure.", "Your business automated starting Monday.", "50 spots. Saturday 10 AM ET. Are you in?"],
-    finalCountdownLabel: "Early Bird $397 ends in:",
-    finalCta: "YES, I WANT MY 3 WORKFLOWS FOR $397 →",
+    finalCountdownLabel: "Early Bird $497 ends in:",
+    finalCta: "YES, I WANT MY 3 WORKFLOWS FOR $497 →",
     finalMicro: "→ WhatsApp registration · 3 x $165 installments · Full guarantee · Beginner-intermediate level",
     finalSocial: "🔥 87 professionals already reserved their spot this week",
-    stickyText: "⚡ 22 spots · Early Bird $397 (goes to $497) · n8n · WhatsApp API · AI ·",
+    stickyText: "⚡ 22 spots · Early Bird $497 (goes to $497) · n8n · WhatsApp API · AI ·",
     stickyBtn: "Reserve →",
     footerTagline: "Automation training for the Latino community in the USA.",
     footerEventTitle: "Automation in Production with n8n",
@@ -871,8 +871,8 @@ export default function AutomationLanding() {
       } else {
         clearInterval(iv)
         // Build WA message
-        const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $397. ¡Gracias!`
-        const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $397. Thank you!`
+        const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $497. ¡Gracias!`
+        const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $497. Thank you!`
         const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
         window.open(url, "_blank")
         setFormSuccess(true)
@@ -2077,8 +2077,8 @@ export default function AutomationLanding() {
                     <p className="text-zinc-400">{t.successSub}</p>
                     <button
                       onClick={() => {
-                        const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $397. ¡Gracias!`
-                        const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $397. Thank you!`
+                        const msgES = `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Negocio: ${formBusiness}\n🔧 Nivel: ${formLevel}\n\nPor favor confírmenme mi cupo Early Bird de $497. ¡Gracias!`
+                        const msgEN = `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${formName}\n📱 WhatsApp: ${formPhone}\n🏢 Business: ${formBusiness}\n🔧 Level: ${formLevel}\n\nPlease confirm my Early Bird spot at $497. Thank you!`
                         const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(lang === "es" ? msgES : msgEN)}`
                         window.open(url, "_blank")
                       }}
@@ -2224,7 +2224,7 @@ export default function AutomationLanding() {
                 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
                 "startDate": "2026-04-19T10:00:00-04:00",
                 "endDate": "2026-04-19T16:00:00-04:00",
-                "offers": { "@type": "Offer", "price": "397", "priceCurrency": "USD" },
+                "offers": { "@type": "Offer", "price": "497", "priceCurrency": "USD" },
                 "inLanguage": ["es", "en"],
                 "description": "Taller intensivo en vivo. Construye 3 workflows activos con n8n, WhatsApp API, Resend y Claude/GPT en 6 horas.",
               },
