@@ -44,7 +44,7 @@ const copy = {
       {
         icon: "Building2",
         title: "Metodología probada",
-        body: " El Build in n8n: Automatizaciones o flujos de trabajo con AI es una spin-off de Protolylat. Somos una software factory con experiencia real de más de 12 años construyendo productos digitales para clientes reales.",
+        body: "El Build in n8n: Automatizaciones o flujos de trabajo con IA es una spin-off de Protolylat. Somos una software factory con experiencia real de más de 12 años construyendo productos digitales para clientes reales.",
       },
       {
         icon: "Wrench",
@@ -422,7 +422,7 @@ const copy = {
       {
         icon: "Building2",
         title: "Proven methodology",
-        body: "Build Nextjs Landing Pages is a spin-off of Protolylat. We are a software factory with 12+ years of real experience building digital products for real clients.",
+        body: "The Build in n8n: Automations or workflows with AI is a spin-off of Protolylat. We are a software factory with 12+ years of real experience building digital products for real clients.",
       },
       {
         icon: "Wrench",
