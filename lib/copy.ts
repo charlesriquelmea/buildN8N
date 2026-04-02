@@ -283,7 +283,7 @@ export const copy = {
       "Si completas el taller en vivo de 6 horas y al terminar no tienes al menos 1 de los 3 workflows activo y corriendo en tu cuenta, te devuelvo el 100% de tu inversión.\n\nSin preguntas. Sin formularios. Sin esperas de 30 días.\n\nNo vendemos acceso a un webinar de automatización. Vendemos la certeza de que al terminar el sábado, tu negocio opera diferente que cuando empezaste la mañana.",
     instructorBio:
       "Especialista en automatización con n8n con 5+ años implementando workflows para negocios latinos en USA. 200+ workflows deployados en producción. 380+ alumnos formados. Consultor de automatización para agencias y SaaS en NJ/NY.",
-    instructorBadge: "🌎 Instructor bilingüe (Español/English) · n8n Certified",
+    instructorBadge: "🌎 Founder & CEO",
     faqTitle: "Preguntas frecuentes",
     faqs: [
       {

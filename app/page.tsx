@@ -257,7 +257,7 @@ const copy = {
     instructorName: "Carlos Riquelme",
     instructorInitials: "CR",
     instructorBio: "Arquitecto de ecosistemas con 12 años innovando en tech. 10 productos construidos. 9 incubaciones impulsadas en Latam. Especializado en el mercado latino: emprendedores, equipos y builders que quieren construir negocios reales con herramientas de frontera.",
-    instructorBadge: "🌎 Instructor bilingüe (Español/English) · n8n Certified",
+    instructorBadge: "🌎 Founder & CEO",
     instructorStats: [
       { value: "10+", label: "Proyectos en tech e innovación" },
       { value: "13+", label: "Años de experiencia" },
@@ -665,10 +665,11 @@ const staggerContainer = {
 // HELPER: format time
 // ─────────────────────────────────────────────────────────
 function formatTime(s: number) {
-  const h = Math.floor(s / 3600)
+  const d = Math.floor(s / (3600 * 24));
+  const h = Math.floor((s % (3600 * 24)) / 3600)
   const m = Math.floor((s % 3600) / 60)
   const sec = s % 60
-  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
+  return `${String(d).padStart(2, "0")}d:${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
 }
 
 // ─────────────────────────────────────────────────────────
@@ -2109,7 +2110,8 @@ export default function AutomationLanding() {
           </motion.div>
 
           {/* Countdown */}
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-center gap-2">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+           className="flex flex-col items-center gap-2">
             <p className="text-zinc-400 text-sm">{t.finalCountdownLabel}</p>
             <div className="flex items-center gap-2">
               {formatTime(countdown).split(":").map((seg, i) => (
