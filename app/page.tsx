@@ -251,7 +251,7 @@ const copy = {
     statsBar: "⚡ 340+ alumnos formados · 🌎 NJ · NY · FL · TX · CA · IL · y más · ⭐ 4.9/5 valoración · 💼 $800 ingreso promedio primer mes como servicio",
     // Guarantee
     guaranteeTitle: "Garantía de aprendizaje real",
-    guaranteeBody: "Si completas el taller en vivo de 6 horas y al terminar no tienes al menos 1 de los 3 workflows activo y corriendo en tu cuenta, te devuelvo el 100% de tu inversión. Sin preguntas. Sin formularios. Sin esperas de 30 días.\n\nNo vendemos acceso a un webinar de automatización. Vendemos la certeza de que al terminar el sábado, tu negocio opera diferente que cuando empezaste la mañana.",
+    guaranteeBody: "Si completas el taller en vivo de 6 horas y al terminar no tienes al menos 1 de los 3 workflows activo y corriendo en tu cuenta de n8n, te damos acceso completo a otra formación de automatización. Sin preguntas. Sin formularios. Sin esperas. No vendemos acceso a un webinar de automatización. Vendemos la certeza de que al terminar el sábado, tu negocio opera diferente que cuando empezaste la mañana.",
     // Instructor
     instructorTitle: "Tu instructor",
     instructorName: "Carlos Riquelme",
@@ -492,7 +492,7 @@ const copy = {
     statsBar: "⚡ 340+ students trained · 🌎 NJ · NY · FL · TX · CA · IL · and more · ⭐ 4.9/5 rating · 💼 $800 average income first month as a service",
     
     guaranteeTitle: "Real learning guarantee",
-    guaranteeBody: "If you complete the 6-hour live workshop and at the end don't have at least 1 of the 3 workflows active and running in your account, I'll refund 100% of your investment. No questions. No forms. No 30-day waits.\n\nWe don't sell automation webinar access. We sell the certainty that when Saturday ends, your business operates differently than when you started the morning.",
+    guaranteeBody: "If you complete the 6-hour live workshop and don't have at least one of the three workflows active and running in your n8n account by the end, we'll give you full access to another automation training course. No questions asked. No forms. No waiting. We don't sell access to an automation webinar. We sell the certainty that by the end of Saturday, your business will be operating differently than when you started that morning.",
 
     instructorTitle: "Your instructor",
     instructorName: "Carlos Riquelme",
