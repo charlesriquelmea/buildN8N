@@ -4,10 +4,14 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from "framer-motion"
 import {
   ChevronDown, Menu, X, Zap, DollarSign, Settings, TrendingUp, Brain, Shield, Check,
-  CheckCircle, Star, MessageCircle, Mail, Clock, Users, ArrowRight, Loader2,
+  CheckCircle, Star, MessageCircle, Mail, Clock, Building2, Wrench, Users, ArrowRight, Loader2,
   ShieldCheck, Instagram, Linkedin, Youtube, Twitter, Globe, Phone
 } from "lucide-react"
 import { PHONE_NUMBER } from "@/lib/copy"
+import { Separator } from "@radix-ui/react-separator"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 
 // ─────────────────────────────────────────────────────────
 // COPY — ALL TEXT STRINGS
@@ -32,6 +36,28 @@ const copy = {
       "un agente de IA respondiendo por ti con contexto.",
       "la habilidad que las agencias cobran $5,000 por implementar.",
     ],
+
+    // Credibility
+    credibilityTitle: "Credibilidad",
+    credibilitySubtitle: "Respaldado por experiencia",
+    credibilityCards: [
+      {
+        icon: "Building2",
+        title: "Metodología probada",
+        body: "El Build Nextjs Landing Pages es una spin-off de Protolylat. Somos una software factory con experiencia real de más de 12 años construyendo productos digitales para clientes reales.",
+      },
+      {
+        icon: "Wrench",
+        title: "Fundadores en las trincheras",
+        body: "No somos teóricos. Construimos, desplegamos y monetizamos productos todos los días. Enseñamos lo que practicamos.",
+      },
+      {
+        icon: "Star",
+        title: "Primera edición exclusiva",
+        body: "El Cohort #1 es una oportunidad única: acceso directo a los fundadores, precio de founding member, y la oportunidad de dar forma al programa.",
+      },
+    ],
+
     heroSub: "En este taller en vivo de 6 horas construyes — no teóricamente, en tiempo real, en tu propia cuenta — los 3 workflows de automatización que transforman cómo operas tu negocio desde el lunes siguiente.",
     trust: ["Sáb 2 de Mayo - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
@@ -51,6 +77,71 @@ const copy = {
     wf1Impact: ["⏱️ Respuesta: < 2 min", "💰 Valor: $800–$1,500 como servicio", "🔄 24/7 automático"],
     wf1Stack: ["n8n", "Webhooks", "Google Sheets", "WhatsApp Business API"],
     wf2Badge: "Workflow 02",
+    // Value stack
+    valueTitle: "Todo lo que construyes y recibes al inscribirte hoy:",
+    valueItems: [
+      { label: "Acceso al taller en vivo (2 horas) — Landing Page con IA", price: "$397" },
+      { label: "Tu landing page deployada con dominio propio", price: "$297" },
+      { label: "Formulario conectado a WhatsApp Business", price: "$197" },
+      { label: "Email automático de bienvenida (Resend)", price: "$97" },
+      { label: "Animaciones profesionales (Motion)", price: "$97" },
+      { label: "Grabación privada 7 días", price: "$97" },
+      { label: "Comunidad privada de WhatsApp (30 días)", price: "$57" },
+      { label: "Q&A en vivo con el instructor", price: "$97" },
+    ],
+    valueTotalLabel: "Valor total de la formación:",
+    valueTotalPrice: "$1,336",
+    valueYourLabel: "Tu inversión hoy:",
+    valueYourPrice: "$297",
+    valueAnchor: "Un dev en NJ cobra $150/hr. 2 horas de consultoría = $300. Tú pagas $297 y aprendes a construirlo tú — para siempre.",
+
+    // Pricing tiers
+    pricingTitle: "Elige tu acceso — cupos limitados:",
+    pricingTiers: [
+      {
+        label: "Chamber of Commerce Latino NJ",
+        badge: "Miembros",
+        price: "$197",
+        originalPrice: "$297",
+        savings: "Ahorras $100",
+        description: "Exclusivo para miembros activos de la Chamber of Commerce Latino New Jersey.",
+        cta: "Quiero este precio →",
+      },
+      {
+        label: "Aliados del ecosistema",
+        badge: "Aliados",
+        price: "$247",
+        originalPrice: "$297",
+        savings: "Ahorras $50",
+        description: "Para asesores de negocios, contadores, coaches y consultores que refieren clientes.",
+        cta: "Quiero este precio →",
+      },
+      {
+        label: "Público general",
+        badge: "Early Bird",
+        price: "$297",
+        originalPrice: "$397",
+        savings: "Precio sube a $397 pronto",
+        description: "Acceso completo al taller. Precio early bird activo mientras haya cupos disponibles.",
+        cta: "Asegurar mi cupo →",
+        highlighted: true,
+      },
+    ],
+
+    // Growth hack
+    growthTitle: "Trae un amigo y los dos pagan menos:",
+    growthBody: "Refiere a un familiar, amigo o colega — cuando ambos se inscriban, cada uno paga solo $197 en lugar de $297. Comparte tu link personalizado y el descuento se aplica automático. Solo disponible para los próximos 10 cupos referidos.",
+    growthBadge: "Solo 10 cupos con este precio",
+    growthCta: "Obtener mi link de referido →",
+
+    // Payment options
+    paymentTitle: "Opciones de pago flexibles:",
+    paymentOptions: [
+      { label: "Pago completo", detail: "$297 hoy", highlight: false },
+      { label: "3 cuotas", detail: "~$99–$107 / mes", highlight: false },
+      { label: "Reserva anticipada", detail: "$150 hoy → resto en 2 cuotas hasta el workshop", highlight: true },
+    ],
+
     wf2Active: "⚡ Activo desde el día 1",
     wf2Title: "Email Marketing automático con secuencias personalizadas",
     wf2What: "Un nuevo suscriptor o cliente dispara automáticamente una secuencia de emails personalizados con su nombre, comportamiento y contexto — enviados por Resend en los momentos exactos. Tu email marketing corriendo solo mientras tú duermes.",
@@ -113,8 +204,8 @@ const copy = {
       { time: "3:00 PM", title: "Cierre, comunidad y próximos pasos", duration: "30 min", desc: "Acceso a recursos, comunidad WhatsApp, próximas sesiones avanzadas.", learn: "", get: "", badge: null, isBreak: true },
     ],
     // Value Stack
-    valueTitle: "Todo lo que recibes al inscribirte hoy:",
-    valueItems: [
+    valueTitle2: "Todo lo que recibes al inscribirte hoy:",
+    valueItems2: [
       { label: "Acceso al taller en vivo (6 horas)", price: "$597" },
       { label: "Grabación privada 7 días", price: "$197" },
       { label: "Los 3 workflows en código — tuyos para siempre (licencia comercial)", price: "$297" },
@@ -125,12 +216,12 @@ const copy = {
       { label: "Q&A en vivo + soporte técnico durante el taller", price: "$197" },
       { label: "Checklist de deploy y seguridad para n8n en producción", price: "$47" },
     ],
-    valueTotalLabel: "Valor total de la formación:",
-    valueTotalPrice: "$1,743",
+    valueTotalLabel2: "Valor total de la formación:",
+    valueTotalPrice2: "$1,743",
     valueInvestLabel: "Tu inversión hoy:",
     valueInvestPrice: "$397",
     valueEbSub: "(Regular después del Early Bird: $497)",
-    valueAnchor: "Una agencia cobra $2,500 solo por implementar el Workflow 1. Tú pagas $397 y aprendes a construir los 3. Una sola vez. Para siempre.",
+    valueAnchor2: "Una agencia cobra $2,500 solo por implementar el Workflow 1. Tú pagas $397 y aprendes a construir los 3. Una sola vez. Para siempre.",
     valueCta: "Asegurar mi cupo por $397 →",
     // Testimonials
     testimonialsTitle: "Lo que dicen quienes ya tienen sus workflows activos:",
@@ -242,6 +333,7 @@ const copy = {
     footerWaBtn: "Escribir por WhatsApp →",
     footerCopyright: "© 2026  Build in n8n. Formación 100% online. Eastern Time (ET). NJ / NY / USA. Hecho con ❤️ para la comunidad latina.",
   },
+
   en: {
     announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $397 Early Bird →",
     navLinks: ["What you'll build?", "The 3 Workflows", "Investment", "FAQ"],
@@ -322,6 +414,28 @@ const copy = {
       "50 professionals sharing the same problem in real time = accelerated collective learning.",
       "When the 6 hours end you have working infrastructure — not videos to 'watch later'.",
     ],
+
+    // Credibility
+    credibilityTitle: "Credibility",
+    credibilitySubtitle: "Backed by real experience",
+    credibilityCards: [
+      {
+        icon: "Building2",
+        title: "Proven methodology",
+        body: "Build Nextjs Landing Pages is a spin-off of Protolylat. We are a software factory with 12+ years of real experience building digital products for real clients.",
+      },
+      {
+        icon: "Wrench",
+        title: "Founders in the trenches",
+        body: "We are not theorists. We build, deploy, and monetize products every day. We teach what we practice.",
+      },
+      {
+        icon: "Star",
+        title: "Exclusive first edition",
+        body: "Cohort #1 is a unique opportunity: direct access to the founders, founding member pricing, and the chance to shape the program.",
+      },
+    ],
+
     curriculumTitle: "Your Saturday, hour by hour — the architecture of your 6 hours:",
     modules: [
       { time: "10:00 AM", title: "Setup + First Workflow Running", duration: "60 min", desc: "n8n installed, first webhook active, workshop architecture explained.", learn: "How to install and configure n8n (cloud and self-hosted). The anatomy of a workflow: trigger, node, action, output.", get: "n8n running, connected to your Google account, and your first webhook responding to real requests.", badge: null, isBreak: false },
@@ -420,6 +534,70 @@ const copy = {
     step2Label: "What's your WhatsApp? 📱",
     step2Sub: "We send you the workshop link and materials here",
     step3Label: "How do you describe your business right now? 🏢",
+    valueTitle2: "Everything you build and receive when you enroll today:",
+    valueItems2: [
+      { label: "Live workshop access (2 hours) — Landing Page with AI", price: "$397" },
+      { label: "Your landing page deployed with custom domain", price: "$297" },
+      { label: "Form connected to WhatsApp Business", price: "$197" },
+      { label: "Automatic welcome email (Resend)", price: "$97" },
+      { label: "Professional animations (Motion)", price: "$97" },
+      { label: "Private recording 7 days", price: "$97" },
+      { label: "Private WhatsApp community (30 days)", price: "$57" },
+      { label: "Live Q&A with the instructor", price: "$97" },
+    ],
+    valueTotalLabel2: "Total training value:",
+    valueTotalPrice2: "$1,336",
+    valueYourLabel: "Your investment today:",
+    valueYourPrice: "$297",
+    valueAnchor2: "A dev in NJ charges $150/hr. 2 hours of consulting = $300. You pay $297 and learn to build it yourself — forever.",
+
+    // Pricing tiers
+    pricingTitle: "Choose your access — limited spots:",
+    pricingTiers: [
+      {
+        label: "Chamber of Commerce Latino NJ",
+        badge: "Members",
+        price: "$197",
+        originalPrice: "$297",
+        savings: "You save $100",
+        description: "Exclusive for active members of the Chamber of Commerce Latino New Jersey.",
+        cta: "Get this price →",
+      },
+      {
+        label: "Ecosystem allies",
+        badge: "Allies",
+        price: "$247",
+        originalPrice: "$297",
+        savings: "You save $50",
+        description: "For business advisors, accountants, coaches, and consultants who refer clients.",
+        cta: "Get this price →",
+      },
+      {
+        label: "General public",
+        badge: "Early Bird",
+        price: "$297",
+        originalPrice: "$397",
+        savings: "Price increases to $397 soon",
+        description: "Full workshop access. Early bird price active while spots are available.",
+        cta: "Secure my spot →",
+        highlighted: true,
+      },
+    ],
+
+    // Growth hack
+    growthTitle: "Bring a friend and both pay less:",
+    growthBody: "Refer a family member, friend, or colleague — when both of you enroll, each pays only $197 instead of $297. Share your personalized link and the discount applies automatically. Only available for the next 10 referred spots.",
+    growthBadge: "Only 10 spots at this price",
+    growthCta: "Get my referral link →",
+
+    // Payment options
+    paymentTitle: "Flexible payment options:",
+    paymentOptions: [
+      { label: "Full payment", detail: "$297 today", highlight: false },
+      { label: "3 installments", detail: "~$99–$107 / month", highlight: false },
+      { label: "Early reserve", detail: "$150 today → rest in 2 installments before the workshop", highlight: true },
+    ],
+
     step3Options: [
       { emoji: "🚀", label: "Entrepreneur / Solopreneur", sub: "I run my own business" },
       { emoji: "💼", label: "Freelancer / VA / Consultant", sub: "I offer services to clients" },
@@ -604,6 +782,22 @@ function TiltCard({ children, className }: { children: React.ReactNode; classNam
   )
 }
 
+function StrikethroughPrice({ price, prefersReducedMotion }: { price: string; prefersReducedMotion: boolean }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  useEffect(() => {
+    if (prefersReducedMotion) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && ref.current) {
+          ref.current.classList.add("line-through")
+        }
+      },
+      { threshold: 1 }
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [prefersReducedMotion])
+}
 // ─────────────────────────────────────────────────────────
 // MAIN COMPONENT
 // ─────────────────────────────────────────────────────────
@@ -1243,8 +1437,8 @@ export default function AutomationLanding() {
         </div>
       </section>
 
-      {/* ── VALUE STACK ── */}
-      <section id="value" className="py-24 bg-zinc-950 relative">
+      {/* ── VALUE STACK OLD── */}
+      {/* <section id="value" className="py-24 bg-zinc-950 relative">
         <div className="absolute inset-0 pointer-events-none" style={{ boxShadow: "inset 0 0 120px rgba(139,92,246,0.04)" }} />
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-8 text-center text-balance">
@@ -1291,12 +1485,180 @@ export default function AutomationLanding() {
             </button>
           </motion.div>
         </div>
+      </section> */}
+
+
+      {/* ── Value receipt ── */}
+      <section className="py-24 bg-zinc-900">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-balance">
+              {t.valueTitle2}
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="rounded-2xl border border-zinc-700 overflow-hidden bg-zinc-800"
+          >
+            <ul className="divide-y divide-zinc-700/60">
+              {t.valueItems2.map((item, i) => (
+                <li key={i} className="flex items-center justify-between gap-4 px-6 py-4">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle size={18} className="text-green-400 shrink-0" />
+                    <span className="text-zinc-300 text-sm leading-relaxed">{item.label}</span>
+                  </div>
+                  <span className="text-zinc-500 text-sm font-mono shrink-0 line-through">{item.price}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="border-t border-zinc-700 px-6 py-4 flex items-center justify-between bg-zinc-900">
+              <span className="text-zinc-400 font-semibold">{t.valueTotalLabel2}</span>
+              <span className="text-zinc-400 line-through text-lg font-bold font-mono">{t.valueTotalPrice2}</span>
+            </div>
+
+            <div className="px-6 py-5 flex items-center justify-between bg-orange-500/8 border-t border-zinc-700">
+              <span className="text-white font-bold text-lg">
+                {t.valueYourLabel ?? t.valueInvestLabel}
+              </span>
+              <motion.span
+                initial={{ scale: 1 }}
+                whileInView={{ scale: [1, 1.08, 1] }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-orange-400 font-black text-3xl"
+              >
+                {t.valueYourPrice ?? t.valueInvestPrice} 🔥
+              </motion.span>
+            </div>
+          </motion.div>
+
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="mt-5 text-center text-sm text-zinc-500 italic leading-relaxed"
+          >
+            {t.valueAnchor}
+          </motion.p>
+        </div>
       </section>
 
+      {/* ── Pricing tiers ── */}
+      <section className="py-16 bg-zinc-950">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white text-balance">
+              {t.pricingTitle}
+            </h2>
+          </motion.div>
 
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="flex flex-col gap-4"
+          >
+            {t.pricingTiers.map((tier, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                className={`rounded-xl border-2 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors ${tier.highlighted
+                  ? "border-orange-500 bg-orange-500/8"
+                  : "border-zinc-700 bg-zinc-800/50"
+                  }`}
+              >
+                <div className="flex flex-col gap-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-bold text-white text-base">{tier.label}</span>
+                    <span
+                      className={`text-xs px-2 py-0.5 rounded-full border font-semibold ${tier.highlighted
+                        ? "bg-orange-500/20 text-orange-300 border-orange-500/40"
+                        : "bg-zinc-700 text-zinc-300 border-zinc-600"
+                        }`}
+                    >
+                      {tier.badge}
+                    </span>
+                  </div>
+                  <p className="text-sm text-zinc-400 leading-relaxed">{tier.description}</p>
+                  <p className="text-xs text-green-400 font-semibold mt-1">{tier.savings}</p>
+                </div>
+
+                <div className="flex sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-3 shrink-0">
+                  <div className="flex items-baseline gap-2">
+                    <span className={`font-black text-2xl ${tier.highlighted ? "text-orange-400" : "text-white"}`}>
+                      {tier.price}
+                    </span>
+                    <span className="text-zinc-500 line-through text-sm font-mono">{tier.originalPrice}</span>
+                  </div>
+                  <button
+                    onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
+                    className={`shrink-0 font-bold px-4 py-2 rounded-lg text-sm transition-colors min-h-10 ${tier.highlighted
+                      ? "bg-orange-500 hover:bg-orange-600 text-white"
+                      : "bg-zinc-700 hover:bg-zinc-600 text-zinc-200"
+                      }`}
+                  >
+                    {tier.cta}
+                  </button>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Growth hack ── */}
+      <section className="pb-16 bg-zinc-950">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="rounded-2xl border border-dashed border-orange-500/40 bg-orange-500/5 p-6 flex flex-col sm:flex-row gap-5 items-start"
+          >
+            <div className="shrink-0 mt-1">
+              <Users className="w-8 h-8 text-orange-400" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-white font-bold text-lg">{t.growthTitle}</h3>
+                <span className="text-xs px-2 py-0.5 rounded-full border font-semibold bg-orange-500/20 text-orange-300 border-orange-500/40">
+                  {t.growthBadge}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">{t.growthBody}</p>
+              <button
+                onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
+                className="border border-orange-500/50 text-orange-400 hover:bg-orange-500/10 font-bold mt-1 w-fit px-4 py-2 rounded-lg text-sm transition-colors min-h-10"
+              >
+                {t.growthCta}
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* ── TESTIMONIALS ── */}
-      {/*       <section className="py-24 bg-zinc-900">
+      {/* <section className="py-24 bg-zinc-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="text-3xl sm:text-4xl font-bold text-zinc-50 mb-12 text-center text-balance">
             {t.testimonialsTitle}
@@ -1327,7 +1689,7 @@ export default function AutomationLanding() {
             <p className="text-zinc-300 text-sm">{t.statsBar}</p>
           </motion.div>
         </div>
-      </section> */}
+      </section>  */}
 
       {/* ── GUARANTEE ── */}
       <section className="py-24 bg-zinc-950">
@@ -1346,8 +1708,63 @@ export default function AutomationLanding() {
         </div>
       </section>
 
+      {/* CREDIBILITY */}
+      <section id="credibilidad" className="py-24 bg-zinc-900">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 flex flex-col gap-10">
+
+          {/* Header */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-center"
+          >
+            <p className="text-orange-400 text-sm font-bold uppercase tracking-widest mb-2">
+              {t.credibilityTitle}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-50 text-balance">
+              {t.credibilitySubtitle}
+            </h2>
+          </motion.div>
+
+          {/* Cards */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-5"
+          >
+            {t.credibilityCards.map((card, i) => {
+              const Icon = iconMap[card.icon] ?? Star
+              return (
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  className="bg-zinc-800 border border-zinc-700 hover:border-violet-500/40 rounded-2xl p-6 flex flex-col gap-4 transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-orange-500/10">
+                    <Icon size={20} className="text-orange-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-zinc-50 font-bold text-base mb-2 text-balance">
+                      {card.title}
+                    </h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed">
+                      {card.body}
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+
+        </div>
+      </section>
+
       {/* ── INSTRUCTOR ── */}
-{/*       <section className="py-24 bg-zinc-900">
+      {/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
             
@@ -1376,7 +1793,7 @@ export default function AutomationLanding() {
       </section> */}
 
       {/* ── PROFFESSOR ── */}
-{/*       <section className="py-24 bg-zinc-900">
+      {/*       <section className="py-24 bg-zinc-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
 
