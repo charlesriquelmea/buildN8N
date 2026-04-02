@@ -637,7 +637,7 @@ export const copy = {
       "If you complete the 6-hour live workshop and at the end don't have at least 1 of the 3 workflows active and running in your account, I'll refund 100% of your investment.\n\nNo questions. No forms. No 30-day waits.\n\nWe don't sell automation webinar access. We sell the certainty that when Saturday ends, your business operates differently than when you started the morning.",
     instructorBio:
       "n8n automation specialist with 5+ years implementing workflows for Latino businesses in the USA. 200+ workflows deployed in production. 380+ students trained. Automation consultant for agencies and SaaS in NJ/NY.",
-    instructorBadge: "🌎 Bilingual instructor (Español/English) · n8n Certified",
+    instructorBadge: "🌎 Founder & CEO",
     faqTitle: "Frequently asked questions",
     faqs: [
       {
