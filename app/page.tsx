@@ -12,6 +12,7 @@ import { Separator } from "@radix-ui/react-separator"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import HeroUrgencySection from "@/components/sections/HeroUrgencySection"
 
 // ─────────────────────────────────────────────────────────
 // COPY — ALL TEXT STRINGS
@@ -490,7 +491,7 @@ const copy = {
       },
     ],
     statsBar: "⚡ 340+ students trained · 🌎 NJ · NY · FL · TX · CA · IL · and more · ⭐ 4.9/5 rating · 💼 $800 average income first month as a service",
-    
+
     guaranteeTitle: "Real learning guarantee",
     guaranteeBody: "If you complete the 6-hour live workshop and don't have at least one of the three workflows active and running in your n8n account by the end, we'll give you full access to another automation training course. No questions asked. No forms. No waiting. We don't sell access to an automation webinar. We sell the certainty that by the end of Saturday, your business will be operating differently than when you started that morning.",
 
@@ -1659,6 +1660,10 @@ export default function AutomationLanding() {
         </div>
       </section>
 
+      
+      {/* ── Hero Urgency ── */}
+      <HeroUrgencySection lang={lang}/>
+
       {/* ── TESTIMONIALS ── */}
       {/* <section className="py-24 bg-zinc-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -2111,7 +2116,7 @@ export default function AutomationLanding() {
 
           {/* Countdown */}
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
-           className="flex flex-col items-center gap-2">
+            className="flex flex-col items-center gap-2">
             <p className="text-zinc-400 text-sm">{t.finalCountdownLabel}</p>
             <div className="flex items-center gap-2">
               {formatTime(countdown).split(":").map((seg, i) => (

@@ -369,7 +369,82 @@ export const copy = {
     footerLinks: ["Política de privacidad", "Términos", "Contacto"],
     footerCopy: `© 2026. Formación 100% online. Eastern Time (ET). NJ / NY / USA. Hecho con ❤️ para la comunidad latina.`,
     waMessage: (name: string, business: string, level: string) =>
-      `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${name}\n🏢 Negocio: ${business}\n🔧 Nivel: ${level}\n\nPor favor confírmenme mi cupo Early Bird de $497. ¡Gracias!`,
+      `Hola! Quiero inscribirme al taller "Automatización en 6 Horas con n8n" ⚡\n\n📝 Nombre: ${name}\n🏢 Negocio: ${business}\n🔧 Nivel: ${level}\n\ Por favor confírmenme mi cupo Early Bird de $497. ¡Gracias!`,
+    heroUrgency: {
+      scarcity: "● Acceso Early Bird activo · Precio sube en 72 horas",
+      wakeup: {
+        h1: "¿Cuántas horas semanales dedica tu equipo a tareas que siguen siempre el mismo patrón?",
+        sub: "Recibir datos · Transformarlos · Moverlos · Notificar a alguien.",
+        accent: "más de 5 horas",
+      },
+      calculator: {
+        title: "> calcular-impuesto-ineficiencia --modo-operaciones",
+        rows: [
+          { label: "5  hrs/sem × $25/hr × 52 sem", amount: "$6,500 / año", chip: "[deuda operativa]" },
+          { label: "10 hrs/sem × $25/hr × 52 sem", amount: "$13,000 / año", chip: "[deuda operativa]" },
+          { label: "20 hrs/sem × $25/hr × 52 sem", amount: "$26,000 / año", chip: "[deuda operativa]" },
+        ],
+      },
+      workflow: {
+        nodes: ["🔗 Webhook", "⚙️ Transform", "🤖 AI — Claude", "📲 WhatsApp + CRM", "✅ Done"],
+        comparison: {
+          sin: {
+            label: "SIN n8n",
+            steps: "Lead recibido → Revisar email → Buscar en CRM → Copiar datos → Enviar WhatsApp",
+            time: "⏱ 24–48 horas",
+          },
+          con: {
+            label: "CON n8n",
+            steps: "Lead recibido → Webhook → Automatización → WhatsApp enviado → ✅",
+            time: "⚡ < 90 segundos",
+          },
+        },
+      },
+      gapTable: {
+        title: "La empresa que no automatiza hoy es más cara de operar que su competidor mañana",
+        headers: ["Capacidad", "Sin n8n", "Con n8n"],
+        rows: [
+          ["Respuesta a leads", "24–48 hrs (manual)", "< 90 seg (autónomo)"],
+          ["Escala de operaciones", "Lineal al headcount", "Exponencial sin contratar"],
+          ["Consistencia de datos", "Variable — depende del operador", "Uniforme y auditable"],
+          ["Integración de herramientas", "Silos — cada app aislada", "Orquestada — todo conectado"],
+          ["Costo operativo por volumen", "Creciente con cada hire", "Fijo y decreciente"],
+        ],
+      },
+      risk: [
+        {
+          icon: "⚡",
+          title: "Ya no será ventaja competitiva",
+          text: "En octubre 2026, automatizar leads será el requisito mínimo del mercado. Quien lo aprendió antes ya cobra más.",
+        },
+        {
+          icon: "💸",
+          title: "Tu deuda operativa se compone",
+          text: "Cada mes operando en manual es ineficiencia que no recuperas. La brecha con competidores automatizados crece cada semana.",
+        },
+        {
+          icon: "🤖",
+          title: "Los agentes IA ya operan en producción",
+          text: "n8n + Claude + OpenAI = workflows que piensan y deciden. No aprenderlo hoy es no existir en la conversación de automatización inteligente.",
+        },
+      ],
+      marquee: {
+        label: "Conecta cualquier herramienta de tu stack actual:",
+        tools: ["WhatsApp", "Slack", "Gmail", "Google Sheets", "Airtable", "Stripe", "HubSpot", "Notion", "Supabase", "OpenAI", "Claude", "Telegram"],
+      },
+      cta: {
+        h1: "No automatizar hoy no es una decisión neutral.",
+        sub: "Es una decisión activa de subsidiar la ineficiencia con tiempo humano — el recurso más escaso que tienes.",
+        bridge: "Cada semana de retraso es una semana más de ese subsidio.",
+        btn: "→ Empezar a automatizar ahora",
+        trust: [
+          "🛡️ Garantía de aprendizaje aplicable",
+          "💳 Opciones de pago disponibles",
+          "⚡ Buildeas tu primer workflow funcional desde la primera sesión",
+        ],
+      },
+      urgencyBar: "⏰ El mercado de automatización ya no espera. Cada semana de retraso tiene un costo medible.",
+    },
   },
   en: {
     announcementBar:
@@ -724,6 +799,81 @@ export const copy = {
     footerCopy: `© 2026. 100% online training. Eastern Time (ET). NJ / NY / USA. Made with ❤️ for the Latino community.`,
     waMessage: (name: string, business: string, level: string) =>
       `Hi! I want to enroll in the "Automation in 6 Hours with n8n" workshop ⚡\n\n📝 Name: ${name}\n🏢 Business: ${business}\n🔧 Level: ${level}\n\nPlease confirm my Early Bird spot at $497. Thank you!`,
+    heroUrgency: {
+      scarcity: "● Early Bird Access Active · Price increases in 72 hours",
+      wakeup: {
+        h1: "How many hours per week does your team spend on tasks that follow the same pattern?",
+        sub: "Receive data · Transform it · Move it · Notify someone.",
+        accent: "more than 5 hours",
+      },
+      calculator: {
+        title: "> calculate-inefficiency-tax --ops-mode",
+        rows: [
+          { label: "5  hrs/wk × $25/hr × 52 wks", amount: "$6,500 / year", chip: "[operational debt]" },
+          { label: "10 hrs/wk × $25/hr × 52 wks", amount: "$13,000 / year", chip: "[operational debt]" },
+          { label: "20 hrs/wk × $25/hr × 52 wks", amount: "$26,000 / year", chip: "[operational debt]" },
+        ],
+      },
+      workflow: {
+        nodes: ["🔗 Webhook", "⚙️ Transform", "🤖 AI — Claude", "📲 WhatsApp + CRM", "✅ Done"],
+        comparison: {
+          sin: {
+            label: "WITHOUT n8n",
+            steps: "Lead received → Check email → Search in CRM → Copy data → Send WhatsApp",
+            time: "⏱ 24–48 hours",
+          },
+          con: {
+            label: "WITH n8n",
+            steps: "Lead received → Webhook → Automation → WhatsApp sent → ✅",
+            time: "⚡ < 90 seconds",
+          },
+        },
+      },
+      gapTable: {
+        title: "The company that doesn't automate today is more expensive to operate than its competitor tomorrow",
+        headers: ["Capacity", "Without n8n", "With n8n"],
+        rows: [
+          ["Lead response", "24–48 hrs (manual)", "< 90 sec (autonomous)"],
+          ["Operations scale", "Linear to headcount", "Exponential without hiring"],
+          ["Data consistency", "Variable — depends on operator", "Uniform and auditable"],
+          ["Tool integration", "Silos — each app isolated", "Orchestrated — everything connected"],
+          ["Op cost per volume", "Increasing with each hire", "Fixed and decreasing"],
+        ],
+      },
+      risk: [
+        {
+          icon: "⚡",
+          title: "It's no longer a competitive advantage",
+          text: "By October 2026, lead automation will be the minimum market requirement. Those who learned it earlier already charge more.",
+        },
+        {
+          icon: "💸",
+          title: "Your operational debt compounds",
+          text: "Every month operating manually is inefficiency you don't recover. The gap with automated competitors grows every week.",
+        },
+        {
+          icon: "🤖",
+          title: "AI agents are already in production",
+          text: "n8n + Claude + OpenAI = workflows that think and decide. Not learning it today is not existing in the intelligent automation conversation.",
+        },
+      ],
+      marquee: {
+        label: "Connect any tool from your current stack:",
+        tools: ["WhatsApp", "Slack", "Gmail", "Google Sheets", "Airtable", "Stripe", "HubSpot", "Notion", "Supabase", "OpenAI", "Claude", "Telegram"],
+      },
+      cta: {
+        h1: "Not automating today is not a neutral decision.",
+        sub: "It's an active decision to subsidize inefficiency with human time — the scarcest resource you have.",
+        bridge: "Every week of delay is one more week of that subsidy.",
+        btn: "→ Start automating now",
+        trust: [
+          "🛡️ Applicable learning guarantee",
+          "💳 Flexible payment options",
+          "⚡ Build your first functional workflow from session one",
+        ],
+      },
+      urgencyBar: "⏰ The automation market no longer waits. Every week of delay has a measurable cost.",
+    },
   },
 } as const
 
