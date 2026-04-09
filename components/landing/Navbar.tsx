@@ -88,7 +88,7 @@ export function Navbar({ lang, onLangChange, onCtaClick, countdown }: Props) {
           {/* Countdown */}
           <span className="hidden lg:flex items-center gap-1 text-xs font-mono text-violet-400 bg-violet-500/10 border border-violet-500/20 rounded-full px-3 py-1">
             <Zap className="w-3 h-3" />
-            EB: {countdown.h}:{countdown.m}:{countdown.s}
+            EB: {countdown.h}h:{countdown.m}m:{countdown.s}s
           </span>
 
           {/* CTA */}
