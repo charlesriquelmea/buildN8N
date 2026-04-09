@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import HeroUrgencySection from "@/components/sections/HeroUrgencySection"
+import { TARGET_DATE } from "@/lib/const"
 
 // ─────────────────────────────────────────────────────────
 // COPY — ALL TEXT STRINGS
@@ -20,7 +21,7 @@ import HeroUrgencySection from "@/components/sections/HeroUrgencySection"
 const copy = {
   es: {
     // Announcement bar
-    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 2 de Mayo, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $497 Early Bird →",
+    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 25 de Abril, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $497 Early Bird →",
     // Navbar
     navLinks: ["¿Qué construirás?", "Los 3 Workflows", "Inversión", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
@@ -60,7 +61,7 @@ const copy = {
     ],
 
     heroSub: "En este taller en vivo de 6 horas construyes — no teóricamente, en tiempo real, en tu propia cuenta — los 3 workflows de automatización que transforman cómo operas tu negocio desde el lunes siguiente.",
-    trust: ["Sáb 2 de Mayo - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
+    trust: ["Sáb 25 de Abril - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Asegurar mi cupo ($497) →",
     heroMicro: "6 horas · 3 workflows activos · nivel principiante-intermedio · garantía total si no automatizas nada",
@@ -327,7 +328,7 @@ const copy = {
     // Footer
     footerTagline: "Formación en automatización para la comunidad latina en USA.",
     footerEventTitle: "Automatización en Producción con n8n",
-    footerDate: "Sábado 2 de Mayo, 2026",
+    footerDate: "Sábado 25 de Abril, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Política de privacidad", "Términos", "Contacto"],
     footerWaQ: "¿Preguntas antes de inscribirte?",
@@ -336,7 +337,7 @@ const copy = {
   },
 
   en: {
-    announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $497 Early Bird →",
+    announcementBar: "⚡ LIVE TRAINING · Sat April 25, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $497 Early Bird →",
     navLinks: ["What you'll build?", "The 3 Workflows", "Investment", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
     ctaNav: "Secure spot — $497",
@@ -352,7 +353,7 @@ const copy = {
       "the skill agencies charge $5,000 to implement.",
     ],
     heroSub: "In this 6-hour live workshop you build — not theoretically, in real time, on your own account — the 3 automation workflows that transform how you operate your business starting the following Monday.",
-    trust: ["Sat May 2 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
+    trust: ["Sat April 25 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Secure my spot ($497) →",
     heroMicro: "6 hours · 3 active workflows · beginner-intermediate level · full guarantee if you don't automate anything",
@@ -626,7 +627,7 @@ const copy = {
     stickyBtn: "Reserve →",
     footerTagline: "Automation training for the Latino community in the USA.",
     footerEventTitle: "Automation in Production with n8n",
-    footerDate: "Saturday May 2, 2026",
+    footerDate: "Saturday April 25, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Privacy Policy", "Terms", "Contact"],
     footerWaQ: "Questions before enrolling?",
@@ -827,7 +828,7 @@ export default function AutomationLanding() {
 
   const t = copy[lang]
 
-  const targetDate = new Date("2026-05-02T00:00:00");
+  const targetDate = new Date(TARGET_DATE);
   const diffInSeconds = Math.floor((targetDate.getTime() - Date.now()) / 1000);
   const countdown = useCountdown(diffInSeconds)
 
