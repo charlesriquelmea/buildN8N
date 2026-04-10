@@ -21,7 +21,7 @@ import { TARGET_DATE } from "@/lib/const"
 const copy = {
   es: {
     // Announcement bar
-    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 25 de Abril, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $497 Early Bird →",
+    announcementBar: "⚡ FORMACIÓN EN VIVO · Sab 2 de Mayo, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + IA · 6 Horas · 3 Workflows activos · Solo 50 estudiantes · $497 Early Bird →",
     // Navbar
     navLinks: ["¿Qué construirás?", "Los 3 Workflows", "Inversión", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
@@ -61,7 +61,7 @@ const copy = {
     ],
 
     heroSub: "En este taller en vivo de 6 horas construyes — no teóricamente, en tiempo real, en tu propia cuenta — los 3 workflows de automatización que transforman cómo operas tu negocio desde el lunes siguiente.",
-    trust: ["Sáb 25 de Abril - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
+    trust: ["Sáb 2 de Mayo - 10 AM – 4 PM ET", "3 Workflows activos", "Cobra $1,500–$5,000", "Garantía total"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Asegurar mi cupo ($497) →",
     heroMicro: "6 horas · 3 workflows activos · nivel principiante-intermedio · garantía total si no automatizas nada",
@@ -292,7 +292,7 @@ const copy = {
     formSectionSpots: "22 lugares",
     formSectionSub: "2 minutos · Registro por WhatsApp · Sin tarjeta de crédito aún",
     step0Title: "¡Reserva tu lugar en 2 minutos!",
-    step0Body: "Solo 50 cupos · 3 workflows activos · $497 Early Bird",
+    step0Body: "3 workflows activos · $497 Early Bird",
     step0Btn: "Empezar →",
     step1Label: "¿Cuál es tu nombre? 👋",
     step1Hint: "Presiona Enter ↵",
@@ -323,12 +323,12 @@ const copy = {
     finalMicro: "→ Registro por WhatsApp · 3 cuotas de $165 · Garantía total · Nivel principiante-intermedio",
     finalSocial: "🔥 87 profesionales ya reservaron su cupo esta semana",
     // Sticky bar
-    stickyText: "⚡ 22 cupos · Early Bird $497 (sube a $497) · n8n · WhatsApp API · IA ·",
+    stickyText: "⚡ Early Bird $497 (sube a $497) · n8n · WhatsApp API · IA ·",
     stickyBtn: "Reservar →",
     // Footer
     footerTagline: "Formación en automatización para la comunidad latina en USA.",
     footerEventTitle: "Automatización en Producción con n8n",
-    footerDate: "Sábado 25 de Abril, 2026",
+    footerDate: "Sábado 2 de Mayo, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Política de privacidad", "Términos", "Contacto"],
     footerWaQ: "¿Preguntas antes de inscribirte?",
@@ -337,7 +337,7 @@ const copy = {
   },
 
   en: {
-    announcementBar: "⚡ LIVE TRAINING · Sat April 25, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $497 Early Bird →",
+    announcementBar: "⚡ LIVE TRAINING · Sat May 2, 2026 · 10 AM – 4 PM ET · n8n + WhatsApp API + AI · 6 Hours · 3 Active Workflows · Only 50 students · $497 Early Bird →",
     navLinks: ["What you'll build?", "The 3 Workflows", "Investment", "FAQ"],
     navLinkIds: ["shift", "workflows", "value", "faq"],
     ctaNav: "Secure spot — $497",
@@ -353,7 +353,7 @@ const copy = {
       "the skill agencies charge $5,000 to implement.",
     ],
     heroSub: "In this 6-hour live workshop you build — not theoretically, in real time, on your own account — the 3 automation workflows that transform how you operate your business starting the following Monday.",
-    trust: ["Sat April 25 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
+    trust: ["Sat May 2 - 10 AM – 4 PM ET", "3 Active Workflows", "Charge $1,500–$5,000", "Full guarantee"],
     trustIcons: ["clock", "zap", "dollar", "shield"],
     heroCta: "Secure my spot ($497) →",
     heroMicro: "6 hours · 3 active workflows · beginner-intermediate level · full guarantee if you don't automate anything",
@@ -530,7 +530,7 @@ const copy = {
     formSectionSpots: "22 spots left",
     formSectionSub: "2 minutes · WhatsApp registration · No credit card yet",
     step0Title: "Reserve your spot in 2 minutes!",
-    step0Body: "Only 50 spots · 3 active workflows · $497 Early Bird",
+    step0Body: "3 active workflows · $497 Early Bird",
     step0Btn: "Start →",
     step1Label: "What's your name? 👋",
     step1Hint: "Press Enter ↵",
@@ -623,11 +623,11 @@ const copy = {
     finalCta: "YES, I WANT MY 3 WORKFLOWS FOR $497 →",
     finalMicro: "→ WhatsApp registration · 3 x $165 installments · Full guarantee · Beginner-intermediate level",
     finalSocial: "🔥 87 professionals already reserved their spot this week",
-    stickyText: "⚡ 22 spots · Early Bird $497 (goes to $497) · n8n · WhatsApp API · AI ·",
+    stickyText: "⚡ Early Bird $497 (goes to $497) · n8n · WhatsApp API · AI ·",
     stickyBtn: "Reserve →",
     footerTagline: "Automation training for the Latino community in the USA.",
     footerEventTitle: "Automation in Production with n8n",
-    footerDate: "Saturday April 25, 2026",
+    footerDate: "Saturday May 2, 2026",
     footerTime: "10 AM – 4 PM ET · 100% online",
     footerLinks: ["Privacy Policy", "Terms", "Contact"],
     footerWaQ: "Questions before enrolling?",
@@ -671,7 +671,7 @@ function formatTime(s: number) {
   const h = Math.floor((s % (3600 * 24)) / 3600)
   const m = Math.floor((s % 3600) / 60)
   const sec = s % 60
-  return `${String(d).padStart(2, "0")}d:${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
+  return `${String(d).padStart(2, "0")}d:${String(h).padStart(2, "0")}h:${String(m).padStart(2, "0")}m:${String(sec).padStart(2, "0")}s`
 }
 
 // ─────────────────────────────────────────────────────────
@@ -2139,9 +2139,9 @@ export default function AutomationLanding() {
             <p className="text-zinc-500 text-sm mt-3">{t.finalMicro}</p>
           </motion.div>
 
-          <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-zinc-400 text-sm">
+          {/* <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-zinc-400 text-sm">
             {t.finalSocial}
-          </motion.p>
+          </motion.p> */}
         </div>
       </section>
 
