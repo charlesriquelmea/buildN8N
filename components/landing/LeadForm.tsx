@@ -89,11 +89,11 @@ export function LeadForm({ lang, formRef, highlightForm }: Props) {
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-50 mb-2 text-balance">
             {c.formTitle} —{" "}
-            <span className="text-orange-400">
+            {/* <span className="text-orange-400">
               {lang === "es"
                 ? `Solo quedan ${SPOTS_AVAILABLE} lugares`
                 : `Only ${SPOTS_AVAILABLE} spots left`}
-            </span>
+            </span> */}
           </h2>
           <p className="text-zinc-500 text-sm">{c.formSubtitle}</p>
         </div>
